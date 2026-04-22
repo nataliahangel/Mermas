@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mermas & Desperdicios — Chuí</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f2ee;
+    --surface: #ffffff;
+    --border: #e0d9d0;
+    --accent: #e8430a;
+    --accent2: #f0a500;
+    --accent3: #1a8c5a;
+    --text: #1a1614;
+    --muted: #7a7068;
+    --red: #e8430a;
+    --yellow: #f0a500;
+    --green: #1a8c5a;
+    --tag-bg: #ede8e2;
+  }
+
+- { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+background: var(–bg);
+color: var(–text);
+font-family: ‘DM Mono’, monospace;
+font-size: 13px;
+min-height: 100vh;
+}
+
+/* HEADER */
+header {
+border-bottom: 1px solid var(–border);
+padding: 28px 40px 24px;
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+position: relative;
+overflow: hidden;
+}
+header::before {
+content: ‘’;
+position: absolute;
+top: -60px; right: -60px;
+width: 220px; height: 220px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(232,67,10,0.10) 0%, transparent 70%);
+}
+.logo-area h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: 28px;
+font-weight: 700;
+letter-spacing: -0.5px;
+color: var(–accent);
+}
+.logo-area p {
+font-size: 11px;
+color: var(–muted);
+letter-spacing: 0.12em;
+text-transform: uppercase;
+margin-top: 4px;
+}
+.date-range {
+text-align: right;
+font-size: 11px;
+color: var(–muted);
+letter-spacing: 0.08em;
+}
+.date-range strong {
+color: var(–text);
+font-weight: 500;
+display: block;
+font-size: 13px;
+margin-bottom: 2px;
+}
+
+/* KPI STRIP */
+.kpi-strip {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+border-bottom: 1px solid var(–border);
+}
+.kpi {
+padding: 20px 28px;
+border-right: 1px solid var(–border);
+position: relative;
+}
+.kpi:last-child { border-right: none; }
+.kpi-label {
+font-size: 10px;
+color: var(–muted);
+text-transform: uppercase;
+letter-spacing: 0.14em;
+margin-bottom: 8px;
+}
+.kpi-value {
+font-size: 32px;
+font-weight: 300;
+font-family: ‘Playfair Display’, serif;
+color: var(–accent);
+line-height: 1;
+}
+.kpi-sub {
+font-size: 11px;
+color: var(–muted);
+margin-top: 6px;
+}
+.kpi-bar {
+position: absolute;
+bottom: 0; left: 0;
+height: 2px;
+background: var(–accent);
+opacity: 0.4;
+}
+
+/* MAIN LAYOUT */
+.main {
+display: grid;
+grid-template-columns: 1fr 340px;
+min-height: calc(100vh - 180px);
+}
+
+/* LEFT PANEL */
+.left-panel {
+border-right: 1px solid var(–border);
+}
+
+/* VIEW TABS */
+.view-tabs {
+display: flex;
+border-bottom: 1px solid var(–border);
+background: var(–surface);
+}
+.view-tab {
+padding: 12px 24px;
+font-family: ‘DM Mono’, monospace;
+font-size: 11px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–muted);
+border: none;
+background: none;
+cursor: pointer;
+border-bottom: 2px solid transparent;
+margin-bottom: -1px;
+transition: all 0.15s;
+}
+.view-tab:hover { color: var(–accent); }
+.view-tab.active {
+color: var(–accent);
+border-bottom-color: var(–accent);
+font-weight: 500;
+}
+
+/* INSUMOS VIEW */
+.insumos-grid {
+padding: 24px 28px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 14px;
+}
+.insumo-card {
+background: var(–surface);
+border: 1px solid var(–border);
+border-radius: 6px;
+overflow: hidden;
+transition: box-shadow 0.15s;
+}
+.insumo-card:hover { box-shadow: 0 2px 12px rgba(232,67,10,0.1); border-color: rgba(232,67,10,0.3); }
+.insumo-card-header {
+padding: 12px 16px 10px;
+border-bottom: 1px solid var(–border);
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 8px;
+}
+.insumo-card-name {
+font-weight: 500;
+font-size: 13px;
+color: var(–text);
+text-transform: capitalize;
+line-height: 1.3;
+}
+.insumo-card-total {
+font-family: ‘Playfair Display’, serif;
+font-size: 20px;
+color: var(–accent);
+line-height: 1;
+flex-shrink: 0;
+}
+.insumo-card-total span {
+font-family: ‘DM Mono’, monospace;
+font-size: 10px;
+color: var(–muted);
+display: block;
+text-align: right;
+margin-top: 2px;
+}
+.insumo-card-body {
+padding: 10px 16px 12px;
+}
+.insumo-ocurrencia {
+display: flex;
+align-items: baseline;
+gap: 8px;
+padding: 4px 0;
+border-bottom: 1px solid rgba(180,170,155,0.3);
+font-size: 11px;
+}
+.insumo-ocurrencia:last-child { border-bottom: none; }
+.insumo-oc-fecha { color: var(–muted); width: 38px; flex-shrink: 0; }
+.insumo-oc-cant { color: var(–text); font-weight: 500; flex: 1; }
+.insumo-oc-badge { flex-shrink: 0; }
+.insumo-search {
+padding: 10px 28px 0;
+display: flex;
+gap: 10px;
+align-items: center;
+}
+.insumo-search input {
+background: var(–surface);
+border: 1px solid var(–border);
+border-radius: 3px;
+padding: 7px 12px;
+font-family: ‘DM Mono’, monospace;
+font-size: 12px;
+color: var(–text);
+width: 260px;
+outline: none;
+transition: border-color 0.15s;
+}
+.insumo-search input:focus { border-color: var(–accent); }
+.insumo-search input::placeholder { color: var(–muted); }
+.insumo-count-label {
+font-size: 11px;
+color: var(–muted);
+}
+
+/* SEARCH BAR */
+.search-bar {
+padding: 12px 28px;
+border-bottom: 1px solid var(–border);
+display: flex;
+gap: 10px;
+align-items: center;
+flex-wrap: wrap;
+background: var(–surface);
+}
+.search-input {
+background: var(–bg);
+border: 1px solid var(–border);
+border-radius: 3px;
+padding: 6px 12px;
+font-family: ‘DM Mono’, monospace;
+font-size: 12px;
+color: var(–text);
+outline: none;
+transition: border-color 0.15s;
+flex: 1;
+min-width: 140px;
+max-width: 220px;
+}
+.search-input:focus { border-color: var(–accent); }
+.search-input::placeholder { color: var(–muted); }
+.search-select {
+background: var(–bg);
+border: 1px solid var(–border);
+border-radius: 3px;
+padding: 6px 10px;
+font-family: ‘DM Mono’, monospace;
+font-size: 12px;
+color: var(–text);
+outline: none;
+cursor: pointer;
+transition: border-color 0.15s;
+}
+.search-select:focus { border-color: var(–accent); }
+.search-clear {
+background: none;
+border: 1px solid var(–border);
+border-radius: 3px;
+padding: 6px 10px;
+font-family: ‘DM Mono’, monospace;
+font-size: 11px;
+color: var(–muted);
+cursor: pointer;
+transition: all 0.15s;
+}
+.search-clear:hover { border-color: var(–accent); color: var(–accent); }
+.search-results {
+font-size: 11px;
+color: var(–muted);
+margin-left: auto;
+}
+
+/* CONTROLS */
+.controls {
+padding: 16px 28px;
+border-bottom: 1px solid var(–border);
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+align-items: center;
+}
+.filter-label {
+font-size: 10px;
+color: var(–muted);
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-right: 4px;
+}
+.filter-btn {
+background: var(–tag-bg);
+border: 1px solid var(–border);
+color: var(–muted);
+padding: 5px 12px;
+border-radius: 3px;
+cursor: pointer;
+font-family: ‘DM Mono’, monospace;
+font-size: 11px;
+letter-spacing: 0.05em;
+transition: all 0.15s;
+}
+.filter-btn:hover {
+border-color: var(–accent);
+color: var(–accent);
+}
+.filter-btn.active {
+background: var(–accent);
+border-color: var(–accent);
+color: var(–bg);
+font-weight: 500;
+}
+
+/* TABLA */
+.table-wrap {
+overflow-x: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+thead tr {
+border-bottom: 1px solid var(–border);
+background: var(–surface);
+}
+th {
+padding: 10px 20px;
+text-align: left;
+font-size: 10px;
+color: var(–muted);
+letter-spacing: 0.12em;
+text-transform: uppercase;
+font-weight: 500;
+cursor: pointer;
+user-select: none;
+white-space: nowrap;
+}
+th:hover { color: var(–accent); }
+tbody tr {
+border-bottom: 1px solid rgba(180,170,155,0.4);
+transition: background 0.1s;
+}
+tbody tr:hover { background: rgba(232,67,10,0.04); }
+td {
+padding: 10px 20px;
+vertical-align: top;
+font-size: 12px;
+line-height: 1.4;
+}
+td.fecha {
+color: var(–muted);
+white-space: nowrap;
+font-size: 11px;
+}
+td.insumo {
+color: var(–text);
+font-weight: 500;
+}
+td.cantidad {
+color: var(–accent);
+white-space: nowrap;
+}
+td.causa { color: var(–muted); }
+td.responsable {
+color: var(–muted);
+font-size: 11px;
+}
+
+.badge {
+display: inline-block;
+padding: 2px 8px;
+border-radius: 2px;
+font-size: 10px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+font-weight: 500;
+white-space: nowrap;
+}
+.badge-mal-estado   { background: #fde8e3;  color: #c02a0a;    border: 1px solid #f5b8ad; }
+.badge-quemado      { background: #fff3cc;  color: #8a5c00;    border: 1px solid #f5d97a; }
+.badge-roto         { background: #e3f5e8;  color: #0f6636;    border: 1px solid #9ed4b0; }
+.badge-perso        { background: #e6f4ed;  color: #196a43;    border: 1px solid #8dcca8; }
+.badge-fecha        { background: #fff0e0;  color: #9b4c00;    border: 1px solid #f5c87a; }
+.badge-prueba       { background: #fce8ff;  color: #7a0099;    border: 1px solid #e0aaff; }
+.badge-limpieza     { background: #e8eeff;  color: #2a3a9e;    border: 1px solid #b0bcf5; }
+.badge-otro         { background: #f0eeeb;  color: #5a5248;    border: 1px solid #d0c8bc; }
+
+/* RIGHT PANEL */
+.right-panel {
+background: var(–surface);
+display: flex;
+flex-direction: column;
+}
+.panel-section {
+padding: 20px 22px;
+border-bottom: 1px solid var(–border);
+}
+.panel-section h3 {
+font-size: 10px;
+color: var(–muted);
+letter-spacing: 0.14em;
+text-transform: uppercase;
+margin-bottom: 14px;
+}
+
+/* BAR CHART */
+.bar-row {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 9px;
+}
+.bar-label {
+width: 110px;
+font-size: 11px;
+color: var(–text);
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+flex-shrink: 0;
+text-transform: capitalize;
+}
+.bar-track {
+flex: 1;
+height: 6px;
+background: var(–border);
+border-radius: 3px;
+overflow: hidden;
+}
+.bar-fill {
+height: 100%;
+border-radius: 3px;
+transition: width 0.6s ease;
+}
+.bar-count {
+font-size: 10px;
+color: var(–muted);
+width: 28px;
+text-align: right;
+flex-shrink: 0;
+}
+
+/* CAUSA PIE */
+.causa-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+}
+.causa-item {
+background: var(–bg);
+border-radius: 4px;
+padding: 10px 12px;
+border: 1px solid var(–border);
+}
+.causa-item .n { font-family: ‘Playfair Display’, serif; font-size: 22px; color: var(–accent); line-height: 1; }
+.causa-item .l { font-size: 10px; color: var(–muted); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 3px; }
+.causa-item.red .n { color: #c02a0a; }
+.causa-item.yellow .n { color: #8a5c00; }
+.causa-item.green .n { color: #0f6636; }
+.causa-item.orange .n { color: #9b4c00; }
+.causa-item.purple .n { color: #7a0099; }
+.causa-item.teal .n { color: #196a43; }
+
+/* RESPONSABLES */
+.resp-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 7px 0;
+border-bottom: 1px solid rgba(180,170,155,0.4);
+}
+.resp-row:last-child { border-bottom: none; }
+.resp-name { font-size: 12px; color: var(–text); }
+.resp-count {
+font-family: ‘Playfair Display’, serif;
+font-size: 16px;
+color: var(–accent);
+}
+
+/* NOTAS */
+.nota-card {
+background: var(–bg);
+border-left: 3px solid var(–accent);
+border-radius: 0 4px 4px 0;
+padding: 10px 14px;
+margin-bottom: 10px;
+font-size: 11px;
+line-height: 1.6;
+color: var(–muted);
+}
+.nota-card strong { color: var(–accent); display: block; margin-bottom: 3px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* EMPTY */
+.empty-state {
+padding: 40px;
+text-align: center;
+color: var(–muted);
+font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+border-top: 1px solid var(–border);
+padding: 12px 40px;
+font-size: 10px;
+color: var(–muted);
+letter-spacing: 0.08em;
+display: flex;
+justify-content: space-between;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <h1>Chuí — Control de Mermas</h1>
+    <p>Perso · Desperdicios · Estado de insumos</p>
+  </div>
+  <div class="date-range">
+    <strong>8 — 21 abril 2026</strong>
+    registro activo del equipo
+  </div>
+</header>
+
+<div class="kpi-strip" id="kpiStrip">
+  <!-- filled by JS -->
+</div>
+
+<div class="main">
+  <div class="left-panel">
+    <div class="view-tabs">
+      <button class="view-tab active" onclick="switchView('registros', this)">Registros</button>
+      <button class="view-tab" onclick="switchView('insumos', this)">Por insumo</button>
+    </div>
+
+```
+<!-- VISTA REGISTROS -->
+<div id="viewRegistros">
+  <div class="search-bar">
+    <input class="search-input" type="text" id="searchInsumo" placeholder="Insumo..." oninput="applySearch()">
+    <input class="search-input" type="text" id="searchPersona" placeholder="Persona..." oninput="applySearch()">
+    <select class="search-select" id="searchMotivo" onchange="applySearch()">
+      <option value="">Todos los motivos</option>
+      <option value="mal-estado">Mal estado</option>
+      <option value="quemado">Quemado/cocción</option>
+      <option value="roto">Roto</option>
+      <option value="fecha">Vencido</option>
+      <option value="perso">Perso</option>
+      <option value="prueba">Prueba</option>
+      <option value="limpieza">Limpieza cámara</option>
+      <option value="otro">Otro</option>
+    </select>
+    <button class="search-clear" onclick="clearSearch()">✕ Limpiar</button>
+    <span class="search-results" id="searchResults"></span>
+  </div>
+  <div class="controls">
+    <span class="filter-label">Filtrar:</span>
+    <button class="filter-btn active" onclick="filterAll(this)">Todos</button>
+    <button class="filter-btn" onclick="filterCat(this,'mal-estado')">Mal estado</button>
+    <button class="filter-btn" onclick="filterCat(this,'quemado')">Quemado/cocción</button>
+    <button class="filter-btn" onclick="filterCat(this,'roto')">Roto</button>
+    <button class="filter-btn" onclick="filterCat(this,'fecha')">Vencido/fecha</button>
+    <button class="filter-btn" onclick="filterCat(this,'perso')">Perso</button>
+    <button class="filter-btn" onclick="filterCat(this,'prueba')">Prueba</button>
+    <button class="filter-btn" onclick="filterCat(this,'limpieza')">Limpieza cámara</button>
+  </div>
+  <div class="table-wrap">
+    <table id="mainTable">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Insumo</th>
+          <th>Cantidad</th>
+          <th>Motivo</th>
+          <th>Responsable</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- VISTA POR INSUMO -->
+<div id="viewInsumos" style="display:none">
+  <div class="insumo-search">
+    <input type="text" id="insumoSearch" placeholder="Buscar insumo..." oninput="filterInsumos(this.value)">
+    <span class="insumo-count-label" id="insumoCountLabel"></span>
+  </div>
+  <div class="insumos-grid" id="insumosGrid"></div>
+</div>
+```
+
+  </div>
+
+  <div class="right-panel">
+    <div class="panel-section">
+      <h3>Top insumos perdidos</h3>
+      <div id="topInsumos"></div>
+    </div>
+    <div class="panel-section">
+      <h3>Motivo de merma</h3>
+      <div class="causa-grid" id="causaGrid"></div>
+    </div>
+    <div class="panel-section">
+      <h3>Registros por persona</h3>
+      <div id="responsables"></div>
+    </div>
+    <div class="panel-section">
+      <h3>Notas del coordinador</h3>
+      <div>
+        <div class="nota-card">
+          <strong>Vic Di Gennaro — 8/4</strong>
+          Contabilizar y valorizar perso y mermas en tiempo real. Cada área anota su parte, mínimos incluídos (10g jengibre, 5L aceite, etc.).
+        </div>
+        <div class="nota-card">
+          <strong>Política de comida de personal</strong>
+          Lo que se hace a la mañana se come a la noche. Se estira si es necesario, no se programa comida nueva. No se retiran alimentos sin autorización y registro previo. Lo que se lleva se divide entre todo el equipo.
+        </div>
+        <div class="nota-card">
+          <strong>Uso de ingredientes</strong>
+          Se puede usar todo lo disponible en el restaurante con conciencia del valor de cada ingrediente.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Chuí — Registro interno de mermas</span>
+  <span id="footerCount"></span>
+</footer>
+
+<script>
+const DATA = [
+  // 09/04
+  { fecha:'09/04', insumo:'Zanahoria', cantidad:'1 porción', cat:'mal-estado', nota:'Fuera de la heladera todo el servicio', resp:'Shalmi' },
+  { fecha:'09/04', insumo:'Queso llanero', cantidad:'2 porciones', cat:'otro', nota:'Derretidos', resp:'Ale' },
+  { fecha:'09/04', insumo:'Verdeo', cantidad:'2.725 kg', cat:'mal-estado', nota:'Podrido', resp:'Mica' },
+  { fecha:'09/04', insumo:'Lechuga capuchina', cantidad:'300 g', cat:'mal-estado', nota:'Babosa', resp:'Daniela Romero' },
+  { fecha:'09/04', insumo:'Remolacha', cantidad:'250 g', cat:'mal-estado', nota:'Hongueada', resp:'Daniela Romero' },
+  { fecha:'09/04', insumo:'Palta', cantidad:'1 u', cat:'otro', nota:'Aplastada', resp:'Daniela Romero' },
+  { fecha:'09/04', insumo:'Perejil', cantidad:'1 atado', cat:'mal-estado', nota:'Baboso', resp:'Daniela Romero' },
+  { fecha:'09/04', insumo:'Huevos', cantidad:'3 u', cat:'roto', nota:'Rotos', resp:'Daniela Romero' },
+  { fecha:'09/04', insumo:'Focaccia', cantidad:'1 u', cat:'perso', nota:'Personal', resp:'Gabriel Rolando' },
+  { fecha:'09/04', insumo:'Papa Ana', cantidad:'3.179 kg', cat:'otro', nota:'Merma para llevar', resp:'Celeste Falcon' },
+  { fecha:'09/04', insumo:'Vinagreta limones', cantidad:'425 g', cat:'mal-estado', nota:'Fermentada', resp:'Shalmi' },
+  { fecha:'09/04', insumo:'Butters', cantidad:'380 g (3 u)', cat:'otro', nota:'Entró agua durante la cocción', resp:'Mel' },
+  { fecha:'09/04', insumo:'Tapas alfajor fg', cantidad:'44 g', cat:'prueba', nota:'Prueba', resp:'Mel' },
+
+  // 10/04
+  { fecha:'10/04', insumo:'Pan de pizza', cantidad:'4 u', cat:'otro', nota:'Sobró del servicio', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Focaccia', cantidad:'1 u (cortada)', cat:'otro', nota:'No salió en despacho', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Masa sablée', cantidad:'44 g', cat:'otro', nota:'—', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Fainazzeta', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Queso (uni)', cantidad:'1 u', cat:'quemado', nota:'Quemada', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Zanahoria', cantidad:'580 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Marga', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Polenta', cantidad:'1 u', cat:'otro', nota:'Mal porcionada', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Butters', cantidad:'3 u', cat:'otro', nota:'Entró agua de cocción', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Merengue', cantidad:'870 g', cat:'otro', nota:'—', resp:'Shalmi' },
+  { fecha:'10/04', insumo:'Aceite freidora', cantidad:'4 L', cat:'quemado', nota:'Quemado', resp:'Shalmi' },
+
+  // 11/04
+  { fecha:'11/04', insumo:'Melena (hongo)', cantidad:'250 g', cat:'perso', nota:'Personal', resp:'Ale' },
+  { fecha:'11/04', insumo:'Albahaca', cantidad:'1.2 kg', cat:'mal-estado', nota:'Fea/mal estado', resp:'Ale' },
+  { fecha:'11/04', insumo:'Focaccia', cantidad:'1 u', cat:'quemado', nota:'Quemada', resp:'Ale' },
+  { fecha:'11/04', insumo:'Pizza marga', cantidad:'1 u', cat:'otro', nota:'—', resp:'Ale' },
+  { fecha:'11/04', insumo:'Pizza 4 quesos', cantidad:'1 u', cat:'otro', nota:'—', resp:'Ale' },
+  { fecha:'11/04', insumo:'Pizza boniato', cantidad:'1 u', cat:'otro', nota:'—', resp:'Ale' },
+  { fecha:'11/04', insumo:'Polenta', cantidad:'2 u', cat:'roto', nota:'Rotas', resp:'Ale' },
+  { fecha:'11/04', insumo:'Palta', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Ale' },
+  { fecha:'11/04', insumo:'Baos', cantidad:'2 u', cat:'mal-estado', nota:'Mal estado', resp:'Ale' },
+  { fecha:'11/04', insumo:'Frutilla', cantidad:'160 g', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'11/04', insumo:'Frambuesa', cantidad:'35 g', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'11/04', insumo:'Pepino', cantidad:'1.2 kg', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'11/04', insumo:'Queso llanero', cantidad:'1 u', cat:'roto', nota:'Roto', resp:'Celeste Falcon' },
+  { fecha:'11/04', insumo:'Salsa blanca', cantidad:'1.045 kg', cat:'fecha', nota:'Pasada de fecha', resp:'Celeste Falcon' },
+  { fecha:'11/04', insumo:'Baos', cantidad:'15 u', cat:'fecha', nota:'Fuera de fecha (2/4) — perso', resp:'Nicolas Panadero' },
+  { fecha:'11/04', insumo:'Focaccia', cantidad:'½ u', cat:'perso', nota:'Perso', resp:'Nicolas Panadero' },
+  { fecha:'11/04', insumo:'Chilaquiles', cantidad:'1 porción', cat:'prueba', nota:'Prueba', resp:'Mica' },
+  { fecha:'11/04', insumo:'Pizza fugga', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Tomas' },
+  { fecha:'11/04', insumo:'Focaccia', cantidad:'3 u', cat:'quemado', nota:'Quemadas', resp:'Tomas' },
+  { fecha:'11/04', insumo:'Zanahoria', cantidad:'1 plato', cat:'otro', nota:'—', resp:'Tomas' },
+
+  // 12/04
+  { fecha:'12/04', insumo:'Gouda', cantidad:'407 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Zanahoria en almíbar', cantidad:'306 g', cat:'fecha', nota:'Vencida', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Focaccia', cantidad:'2 u cortadas', cat:'otro', nota:'No salieron en el servicio', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Empanadas', cantidad:'8 u', cat:'roto', nota:'Rotas', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Cremoso palta', cantidad:'100 g', cat:'mal-estado', nota:'Oxidado', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Polenta', cantidad:'2 u', cat:'roto', nota:'Rotas', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Papa', cantidad:'1.2 kg', cat:'perso', nota:'Perso', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Cremoso chocolate', cantidad:'2 u', cat:'otro', nota:'Derretidos', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Vinagreta limones', cantidad:'800 g', cat:'mal-estado', nota:'Fermentada', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Pizza 4 quesos', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Focaccia', cantidad:'2 u', cat:'quemado', nota:'Quemadas', resp:'Shalmi' },
+  { fecha:'12/04', insumo:'Boniato', cantidad:'1.8 kg', cat:'mal-estado', nota:'—', resp:'Ezequiel' },
+  { fecha:'12/04', insumo:'Tomate redondo', cantidad:'490 g', cat:'mal-estado', nota:'—', resp:'Ezequiel' },
+  { fecha:'12/04', insumo:'Ciboulettes', cantidad:'5 u', cat:'mal-estado', nota:'Podridos', resp:'Ezequiel' },
+  { fecha:'12/04', insumo:'Eneldo', cantidad:'1 atado', cat:'mal-estado', nota:'Podrido', resp:'Ezequiel' },
+  { fecha:'12/04', insumo:'Pepino', cantidad:'685 g', cat:'mal-estado', nota:'Podridos', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Lechuga', cantidad:'1.9 kg', cat:'mal-estado', nota:'—', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Kale rizado', cantidad:'1.1 kg', cat:'mal-estado', nota:'Mal estado', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Espinaca', cantidad:'1.7 kg', cat:'mal-estado', nota:'Mal estado', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Brócoli', cantidad:'2.9 kg', cat:'perso', nota:'Amarillo — destinado a perso', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Pepino', cantidad:'2 u', cat:'limpieza', nota:'Limpieza de cámara', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Tomate perita', cantidad:'1 u', cat:'limpieza', nota:'Limpieza de cámara', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Remolacha', cantidad:'2 u', cat:'limpieza', nota:'Limpieza de cámara', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Ají amarillo', cantidad:'2 u', cat:'limpieza', nota:'Limpieza de cámara', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Tomate de árbol', cantidad:'1 u', cat:'limpieza', nota:'Limpieza de cámara', resp:'Celeste Falcon' },
+  { fecha:'12/04', insumo:'Chimi achicoria 9/4', cantidad:'1 frasco', cat:'roto', nota:'Frasco partido', resp:'Celeste Falcon' },
+
+  // 13/04
+  { fecha:'13/04', insumo:'Tomate', cantidad:'660 g', cat:'mal-estado', nota:'Mal estado', resp:'Daniela Romero' },
+  { fecha:'13/04', insumo:'Frutillas', cantidad:'835 g', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'13/04', insumo:'Masa canelón', cantidad:'1.5 kg', cat:'otro', nota:'—', resp:'Gabriel Rolando' },
+
+  // 13/04 (mermas Shalmi, informadas 14/4)
+  { fecha:'13/04', insumo:'Salsa verde', cantidad:'100 g', cat:'fecha', nota:'Fecha', resp:'Shalmi' },
+  { fecha:'13/04', insumo:'Lasaña', cantidad:'6 porciones', cat:'fecha', nota:'Fecha', resp:'Shalmi' },
+
+  // 14/04
+  { fecha:'14/04', insumo:'Orégano', cantidad:'1 atado', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'14/04', insumo:'Frambuesa', cantidad:'½ cubeta', cat:'fecha', nota:'Hongueada, fecha 6/04', resp:'Daniela Romero' },
+  { fecha:'14/04', insumo:'Menta', cantidad:'1 atado', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'14/04', insumo:'Lechuga morada', cantidad:'848 g', cat:'mal-estado', nota:'—', resp:'Daniela Romero' },
+  { fecha:'14/04', insumo:'Girgolas taco cocida', cantidad:'120 g', cat:'otro', nota:'—', resp:'Celeste Falcon' },
+  { fecha:'14/04', insumo:'Pizza fugga', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Tomas' },
+  { fecha:'14/04', insumo:'Focaccia', cantidad:'1 u', cat:'quemado', nota:'Quemada', resp:'Tomas' },
+  { fecha:'14/04', insumo:'Bollo de pizza', cantidad:'1 u', cat:'roto', nota:'Roto', resp:'Tomas' },
+  { fecha:'14/04', insumo:'Ciabatta', cantidad:'9 u', cat:'perso', nota:'Fuera de carta — perso', resp:'Nicolas Panadero' },
+  { fecha:'14/04', insumo:'Coco en escamas', cantidad:'105 g', cat:'mal-estado', nota:'Mal olor', resp:'Mica' },
+
+  // 14/04 — Mica (nuevos)
+  { fecha:'14/04', insumo:'Lechuga capuchina', cantidad:'550 g', cat:'mal-estado', nota:'Mal estado', resp:'Mica' },
+  { fecha:'14/04', insumo:'Papa Ana', cantidad:'6 u', cat:'fecha', nota:'Fecha', resp:'Mica' },
+  { fecha:'14/04', insumo:'Focaccia', cantidad:'1 u', cat:'quemado', nota:'Quemada', resp:'Mica' },
+  { fecha:'14/04', insumo:'Bollo de masa', cantidad:'1 u', cat:'roto', nota:'Roto', resp:'Mica' },
+  { fecha:'14/04', insumo:'Butter', cantidad:'1 u', cat:'otro', nota:'Mal hecho', resp:'Mica' },
+  { fecha:'14/04', insumo:'Mousse', cantidad:'1 u', cat:'otro', nota:'Mal hecho', resp:'Mica' },
+  { fecha:'14/04', insumo:'Huevada berenjena', cantidad:'2 L', cat:'fecha', nota:'Fecha', resp:'Mica' },
+  { fecha:'14/04', insumo:'Puerro cocido', cantidad:'1 kg', cat:'mal-estado', nota:'Mal estado', resp:'Mica' },
+
+  // 15/04
+  { fecha:'15/04', insumo:'Frambuesa', cantidad:'4 cubetas', cat:'fecha', nota:'Del 10/04 — mal estado', resp:'Daniela Romero' },
+  { fecha:'15/04', insumo:'Verdeo (parte verde)', cantidad:'800 g', cat:'otro', nota:'—', resp:'Daniela Romero' },
+  { fecha:'15/04', insumo:'Recortes milanesas', cantidad:'250 g', cat:'perso', nota:'Perso', resp:'Celeste Falcon' },
+  { fecha:'15/04', insumo:'Hojas de puerro', cantidad:'1 kg', cat:'mal-estado', nota:'Podridas', resp:'Celeste Falcon' },
+  { fecha:'15/04', insumo:'Pencas de acelga', cantidad:'750 g', cat:'mal-estado', nota:'Podridas', resp:'Celeste Falcon' },
+  { fecha:'15/04', insumo:'Lechuga capuchina', cantidad:'550 g', cat:'mal-estado', nota:'Mal estado', resp:'Tomas' },
+  { fecha:'15/04', insumo:'Butter', cantidad:'1 u', cat:'otro', nota:'Mal hecho', resp:'Tomas' },
+  { fecha:'15/04', insumo:'Mousse', cantidad:'1 u', cat:'otro', nota:'Mal hecho', resp:'Tomas' },
+  { fecha:'15/04', insumo:'Pizza margha', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Tomas' },
+  { fecha:'15/04', insumo:'Focaccia', cantidad:'3 u', cat:'quemado', nota:'Quemadas', resp:'Tomas' },
+
+  // 17/04 — Ale
+  { fecha:'17/04', insumo:'Pizza margha', cantidad:'1 u', cat:'roto', nota:'—', resp:'Ale' },
+  { fecha:'17/04', insumo:'Pizza XO', cantidad:'1 u', cat:'roto', nota:'—', resp:'Ale' },
+  { fecha:'17/04', insumo:'Focaccia', cantidad:'1 u', cat:'otro', nota:'—', resp:'Ale' },
+  { fecha:'17/04', insumo:'MEP sriracha', cantidad:'⅓ balde', cat:'mal-estado', nota:'Hongo', resp:'Ale' },
+
+  // 17/04 — Celeste
+  { fecha:'17/04', insumo:'Huevada de berenjena', cantidad:'560 g', cat:'fecha', nota:'Cambio de carta + fecha vieja (13/04)', resp:'Celeste Falcon' },
+  { fecha:'17/04', insumo:'Alioli berenjena', cantidad:'—', cat:'otro', nota:'Cambio de carta (14/04)', resp:'Celeste Falcon' },
+
+  // 17/04 — Tomás
+  { fecha:'17/04', insumo:'Provolone', cantidad:'300 g', cat:'perso', nota:'Perso', resp:'Tomas' },
+  { fecha:'17/04', insumo:'Pizza margha', cantidad:'1 u', cat:'quemado', nota:'Quemada', resp:'Tomas' },
+
+  // 17/04 — Shalmi
+  { fecha:'17/04', insumo:'Pizza 4 quesos', cantidad:'2 u', cat:'quemado', nota:'Quemadas', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Caldo claro', cantidad:'1 L', cat:'otro', nota:'Error de MEP', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Verdeo', cantidad:'235 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Garbanzo cocido', cantidad:'165 g', cat:'perso', nota:'Perso', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Focaccia', cantidad:'1 pax', cat:'quemado', nota:'Quemada', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Chips boniato', cantidad:'220 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Queso llanero', cantidad:'3 pax', cat:'otro', nota:'Derretido', resp:'Shalmi' },
+
+  // 17/04 — Shalmi (segundo envío)
+  { fecha:'17/04', insumo:'Pizza 4 quesos', cantidad:'2 u', cat:'quemado', nota:'Quemadas', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Caldo claro', cantidad:'1 L', cat:'otro', nota:'Error de MEP', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Verdeo', cantidad:'235 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Garbanzo cocido', cantidad:'165 g', cat:'perso', nota:'Perso', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Focaccia', cantidad:'1 pax', cat:'quemado', nota:'Quemada', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Chips boniato', cantidad:'220 g', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'17/04', insumo:'Queso llanero', cantidad:'3 pax', cat:'otro', nota:'Derretido', resp:'Shalmi' },
+
+  // 17/04 — Ezequiel
+  { fecha:'17/04', insumo:'Tapas de empanada', cantidad:'50 g (3 u)', cat:'roto', nota:'Rotas', resp:'Ezequiel' },
+  { fecha:'17/04', insumo:'Tomillo', cantidad:'50 g', cat:'mal-estado', nota:'Mal estado', resp:'Ezequiel' },
+  { fecha:'17/04', insumo:'Huacatay', cantidad:'90 g (1 atado)', cat:'mal-estado', nota:'Chamuscado', resp:'Ezequiel' },
+  { fecha:'17/04', insumo:'Eneldo', cantidad:'½ atado', cat:'mal-estado', nota:'Amarillo', resp:'Ezequiel' },
+  { fecha:'17/04', insumo:'Naranja', cantidad:'1 u', cat:'mal-estado', nota:'Mal estado', resp:'Ezequiel' },
+
+  // 17/04 — Celeste (segundo envío)
+  { fecha:'17/04', insumo:'Eneldo', cantidad:'159 g', cat:'mal-estado', nota:'Amarillo', resp:'Celeste Falcon' },
+  { fecha:'17/04', insumo:'Romesco', cantidad:'1.2 kg', cat:'fecha', nota:'Fecha vieja', resp:'Celeste Falcon' },
+  { fecha:'17/04', insumo:'Tortilla', cantidad:'1.8 kg', cat:'perso', nota:'Perso, fecha vieja', resp:'Celeste Falcon' },
+  { fecha:'17/04', insumo:'Papa purée', cantidad:'3 kg', cat:'fecha', nota:'Fecha vieja', resp:'Celeste Falcon' },
+
+  // 17/04 — Caco
+  { fecha:'17/04', insumo:'Arroz', cantidad:'2 kg', cat:'otro', nota:'—', resp:'Caco' },
+  { fecha:'17/04', insumo:'Papa', cantidad:'4 kg', cat:'otro', nota:'—', resp:'Caco' },
+  { fecha:'17/04', insumo:'Brócoli', cantidad:'3 kg', cat:'perso', nota:'Perso', resp:'Caco' },
+  { fecha:'17/04', insumo:'Focaccia', cantidad:'1 u', cat:'perso', nota:'Perso', resp:'Caco' },
+
+  // 18/04 — Shalmi
+  { fecha:'18/04', insumo:'Caldo oscuro', cantidad:'15 L', cat:'mal-estado', nota:'Mal estado', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Pizza marga', cantidad:'1 u', cat:'roto', nota:'Rota', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Pizza marga chica', cantidad:'6 u', cat:'quemado', nota:'Quemadas', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Vinagreta limones', cantidad:'400 g', cat:'mal-estado', nota:'Fermentada', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Eneldo', cantidad:'150 g', cat:'mal-estado', nota:'—', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Romesco', cantidad:'1.2 kg', cat:'fecha', nota:'Fecha', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Tortilla', cantidad:'1.8 kg', cat:'perso', nota:'Perso', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Salsa verde', cantidad:'80 g', cat:'fecha', nota:'Fecha', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Yasgua', cantidad:'765 g', cat:'fecha', nota:'Fecha', resp:'Shalmi' },
+  { fecha:'18/04', insumo:'Caldo de pallares', cantidad:'5 L', cat:'otro', nota:'Extras', resp:'Shalmi' },
+
+  // 19/04 — Celeste
+  { fecha:'19/04', insumo:'Acelga', cantidad:'5 kg', cat:'mal-estado', nota:'Mal estado', resp:'Celeste Falcon' },
+
+  // 19/04 — Mica
+  { fecha:'19/04', insumo:'Relleno DM', cantidad:'450 g', cat:'mal-estado', nota:'—', resp:'Mica' },
+  { fecha:'19/04', insumo:'Empanadas', cantidad:'16 u', cat:'roto', nota:'Rotas', resp:'Mica' },
+  { fecha:'19/04', insumo:'Focaccia', cantidad:'20 u', cat:'perso', nota:'Perso', resp:'Mica' },
+  { fecha:'19/04', insumo:'Masa lasaña', cantidad:'1.555 kg', cat:'perso', nota:'Perso, fecha', resp:'Mica' },
+  { fecha:'19/04', insumo:'Pizza marga', cantidad:'1 u', cat:'otro', nota:'Sin motivo', resp:'Mica' },
+  { fecha:'19/04', insumo:'Pizza 4 quesos', cantidad:'1 u', cat:'otro', nota:'Sin motivo', resp:'Mica' },
+  { fecha:'19/04', insumo:'Arroz', cantidad:'500 g', cat:'otro', nota:'Sin motivo', resp:'Mica' },
+  { fecha:'19/04', insumo:'Queso', cantidad:'2 porciones', cat:'quemado', nota:'Quemado/derretido', resp:'Mica' },
+
+  // 21/04 — Tomas
+  { fecha:'21/04', insumo:'Pizza margha', cantidad:'2 u', cat:'roto', nota:'Rotas', resp:'Tomas' },
+  { fecha:'21/04', insumo:'Criolla', cantidad:'350 g', cat:'fecha', nota:'Fecha', resp:'Tomas' },
+];
+
+const BADGE_LABELS = {
+  'mal-estado': 'Mal estado',
+  'quemado':    'Quemado / cocción',
+  'roto':       'Roto',
+  'perso':      'Perso',
+  'fecha':      'Vencido',
+  'prueba':     'Prueba',
+  'limpieza':   'Limpieza cámara',
+  'otro':       'Otro',
+};
+
+let currentFilter = 'all';
+
+function renderKPIs(data) {
+  const total = data.length;
+  const cats = {};
+  data.forEach(d => { cats[d.cat] = (cats[d.cat]||0)+1; });
+  const topCat = Object.entries(cats).sort((a,b)=>b[1]-a[1])[0];
+  const days = [...new Set(data.map(d=>d.fecha))].length;
+  const resp = [...new Set(data.map(d=>d.resp))].length;
+
+  document.getElementById('kpiStrip').innerHTML = `
+    <div class="kpi">
+      <div class="kpi-label">Total registros</div>
+      <div class="kpi-value">${total}</div>
+      <div class="kpi-sub">insumos reportados</div>
+      <div class="kpi-bar" style="width:100%"></div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Días registrados</div>
+      <div class="kpi-value">${days}</div>
+      <div class="kpi-sub">8 — 15 abril</div>
+      <div class="kpi-bar" style="width:${days/8*100}%"></div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Causa principal</div>
+      <div class="kpi-value" style="font-size:20px;padding-top:6px">${BADGE_LABELS[topCat[0]]}</div>
+      <div class="kpi-sub">${topCat[1]} registros</div>
+      <div class="kpi-bar" style="width:${topCat[1]/total*100}%"></div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Personas activas</div>
+      <div class="kpi-value">${resp}</div>
+      <div class="kpi-sub">registraron mermas</div>
+      <div class="kpi-bar" style="width:${resp/10*100}%"></div>
+    </div>
+  `;
+}
+
+function renderTable(data) {
+  const tbody = document.getElementById('tableBody');
+  if (!data.length) {
+    tbody.innerHTML = `<tr><td colspan="5" class="empty-state">Sin registros para este filtro.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = data.map(d => `
+    <tr>
+      <td class="fecha">${d.fecha}</td>
+      <td class="insumo">${capitalize(d.insumo)}</td>
+      <td class="cantidad">${d.cantidad}</td>
+      <td class="causa"><span class="badge badge-${d.cat}">${BADGE_LABELS[d.cat]}</span>${d.nota && d.nota !== '—' ? `<br><span style="font-size:10px;color:var(--muted);margin-top:3px;display:block">${d.nota}</span>` : ''}</td>
+      <td class="responsable">${d.resp}</td>
+    </tr>
+  `).join('');
+}
+
+function renderSidebar() {
+  // Top insumos
+  const counts = {};
+  DATA.forEach(d => {
+    const k = d.insumo.toLowerCase();
+    counts[k] = (counts[k]||0)+1;
+  });
+  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const max = sorted[0][1];
+  const colors = ['#e8430a','#f0a500','#1a8c5a','#c02a0a','#0f6636','#7a0099','#9b4c00','#2a3a9e','#e8430a','#f0a500'];
+  document.getElementById('topInsumos').innerHTML = sorted.map(([label, n], i) => `
+    <div class="bar-row">
+      <span class="bar-label">${capitalize(label)}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${n/max*100}%;background:${colors[i%colors.length]}"></div></div>
+      <span class="bar-count">${n}</span>
+    </div>
+  `).join('');
+
+  // Causas
+  const causas = {};
+  DATA.forEach(d => { causas[d.cat] = (causas[d.cat]||0)+1; });
+  const causeColors = { 'mal-estado':'red','quemado':'yellow','roto':'green','fecha':'orange','perso':'teal','prueba':'','limpieza':'purple','otro':'' };
+  document.getElementById('causaGrid').innerHTML = Object.entries(causas).sort((a,b)=>b[1]-a[1]).map(([cat,n]) => `
+    <div class="causa-item ${causeColors[cat]||''}">
+      <div class="n">${n}</div>
+      <div class="l">${BADGE_LABELS[cat]}</div>
+    </div>
+  `).join('');
+
+  // Responsables
+  const resp = {};
+  DATA.forEach(d => { resp[d.resp] = (resp[d.resp]||0)+1; });
+  const sortedResp = Object.entries(resp).sort((a,b)=>b[1]-a[1]);
+  document.getElementById('responsables').innerHTML = sortedResp.map(([name, n]) => `
+    <div class="resp-row">
+      <span class="resp-name">${name}</span>
+      <span class="resp-count">${n}</span>
+    </div>
+  `).join('');
+}
+
+function switchView(view, btn) {
+  document.querySelectorAll('.view-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if (view === 'registros') {
+    document.getElementById('viewRegistros').style.display = '';
+    document.getElementById('viewInsumos').style.display = 'none';
+  } else {
+    document.getElementById('viewRegistros').style.display = 'none';
+    document.getElementById('viewInsumos').style.display = '';
+    renderInsumosView(DATA);
+  }
+}
+
+// Parse quantity string into a numeric value + unit label for display
+function parseQty(str) {
+  const s = str.trim().replace(',', '.');
+  // patterns: "2.725 kg", "580 g", "4 L", "3 u", "½ u", "1 porción", etc.
+  const kgMatch = s.match(/([\d.]+)\s*kg/i);
+  if (kgMatch) return { val: parseFloat(kgMatch[1]), unit: 'kg' };
+  const gMatch = s.match(/([\d.]+)\s*g\b/i);
+  if (gMatch) return { val: parseFloat(gMatch[1]) / 1000, unit: 'kg' };
+  const lMatch = s.match(/([\d.]+)\s*[lL]\b/);
+  if (lMatch) return { val: parseFloat(lMatch[1]), unit: 'L' };
+  const uMatch = s.match(/^(\d+)\s*(u|uni|unid|unidades?)/i);
+  if (uMatch) return { val: parseInt(uMatch[1]), unit: 'u' };
+  return null; // unidades no parseables (atados, cubetas, porciones, etc.)
+}
+
+function formatTotal(items) {
+  // Group by unit
+  const totals = {};
+  items.forEach(d => {
+    const p = parseQty(d.cantidad);
+    if (p) {
+      totals[p.unit] = (totals[p.unit] || 0) + p.val;
+    }
+  });
+  if (!Object.keys(totals).length) return { text: items.length + ' reg.', numeric: false };
+  return {
+    text: Object.entries(totals).map(([unit, val]) => {
+      if (unit === 'kg') return (val >= 1 ? val.toFixed(2).replace(/\.?0+$/, '') + ' kg' : (val * 1000).toFixed(0) + ' g');
+      if (unit === 'L') return val.toFixed(1).replace(/\.0$/, '') + ' L';
+      return val + ' u';
+    }).join(' + '),
+    numeric: true
+  };
+}
+
+let insumosData = [];
+
+function buildInsumosData(data) {
+  const map = {};
+  data.forEach(d => {
+    const key = d.insumo.toLowerCase().trim();
+    if (!map[key]) map[key] = { name: d.insumo, items: [] };
+    map[key].items.push(d);
+  });
+  return Object.values(map).sort((a, b) => b.items.length - a.items.length);
+}
+
+function renderInsumosView(data) {
+  insumosData = buildInsumosData(data);
+  renderInsumosGrid(insumosData);
+}
+
+function renderInsumosGrid(list) {
+  const grid = document.getElementById('insumosGrid');
+  document.getElementById('insumoCountLabel').textContent = list.length + ' insumos';
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1">Sin resultados.</div>';
+    return;
+  }
+  grid.innerHTML = list.map(({ name, items }) => {
+    const total = formatTotal(items);
+    const cats = [...new Set(items.map(i => i.cat))];
+    return `
+      <div class="insumo-card">
+        <div class="insumo-card-header">
+          <div class="insumo-card-name">${capitalize(name)}</div>
+          <div class="insumo-card-total">
+            ${total.text}
+            <span>${items.length} registro${items.length > 1 ? 's' : ''}</span>
+          </div>
+        </div>
+        <div class="insumo-card-body">
+          ${items.map(i => `
+            <div class="insumo-ocurrencia">
+              <span class="insumo-oc-fecha">${i.fecha}</span>
+              <span class="insumo-oc-cant">${i.cantidad}${i.nota && i.nota !== '—' ? ` — <span style="color:var(--muted);font-weight:400">${i.nota}</span>` : ''}</span>
+              <span class="insumo-oc-badge"><span class="badge badge-${i.cat}">${BADGE_LABELS[i.cat]}</span></span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function filterInsumos(q) {
+  const lower = q.toLowerCase();
+  const filtered = insumosData.filter(d => d.name.toLowerCase().includes(lower));
+  renderInsumosGrid(filtered);
+}
+
+let currentCatFilter = 'all';
+
+function getSearchFiltered() {
+  const insumo = document.getElementById('searchInsumo').value.toLowerCase().trim();
+  const persona = document.getElementById('searchPersona').value.toLowerCase().trim();
+  const motivo = document.getElementById('searchMotivo').value;
+  return DATA.filter(d => {
+    const matchCat = currentCatFilter === 'all' || d.cat === currentCatFilter;
+    const matchInsumo = !insumo || d.insumo.toLowerCase().includes(insumo);
+    const matchPersona = !persona || d.resp.toLowerCase().includes(persona);
+    const matchMotivo = !motivo || d.cat === motivo;
+    return matchCat && matchInsumo && matchPersona && matchMotivo;
+  });
+}
+
+function applySearch() {
+  const filtered = getSearchFiltered();
+  renderTable(filtered);
+  renderKPIs(filtered);
+  const sr = document.getElementById('searchResults');
+  if (sr) sr.textContent = filtered.length + ' resultado' + (filtered.length !== 1 ? 's' : '');
+  document.getElementById('footerCount').textContent = `${filtered.length} registros`;
+}
+
+function clearSearch() {
+  document.getElementById('searchInsumo').value = '';
+  document.getElementById('searchPersona').value = '';
+  document.getElementById('searchMotivo').value = '';
+  currentCatFilter = 'all';
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.filter-btn')[0].classList.add('active');
+  renderTable(DATA);
+  renderKPIs(DATA);
+  const sr = document.getElementById('searchResults');
+  if (sr) sr.textContent = '';
+  document.getElementById('footerCount').textContent = `${DATA.length} registros totales`;
+}
+
+function filterAll(btn) {
+  currentCatFilter = 'all';
+  setActive(btn);
+  applySearch();
+}
+
+function filterCat(btn, cat) {
+  currentCatFilter = cat;
+  setActive(btn);
+  applySearch();
+}
+
+function setActive(btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function capitalize(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+// Init
+renderKPIs(DATA);
+renderTable(DATA);
+renderSidebar();
+document.getElementById('footerCount').textContent = `${DATA.length} registros totales`;
+</script>
+
+</body>
+</html>
