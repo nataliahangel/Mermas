@@ -882,7 +882,7 @@ th:last-child, td:last-child { display: none; }
 
 <!-- VISTA POR GRUPO -->
 <div id="vG" style="display:none">
-  <div class="i-grid" id="gGrid"></div>
+  <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:10px" id="gGrid"></div>
 </div>
 ```
 
@@ -1349,44 +1349,83 @@ function rGrupoView() {
     map[g].push(d);
   });
 
-  // sort groups by count desc
   const sorted = Object.entries(map).sort((a,b) => b[1].length - a[1].length);
 
-  // within each group, aggregate by insumo
-  document.getElementById('gGrid').innerHTML = sorted.map(([grupo, items]) => {
+  document.getElementById('gGrid').innerHTML = sorted.map(([grupo, items], idx) => {
     const {icon} = GRUPOS[grupo] || {icon:'📦'};
     const byIns = {};
     items.forEach(d => {
       const k = d.insumo.toLowerCase();
-      if (!byIns[k]) byIns[k] = {name: d.insumo, count: 0, cats: {}};
+      if (!byIns[k]) byIns[k] = {name: d.insumo, count: 0, cats: {}, rows: []};
       byIns[k].count++;
       byIns[k].cats[d.cat] = (byIns[k].cats[d.cat]||0)+1;
+      byIns[k].rows.push(d);
     });
     const insRows = Object.values(byIns).sort((a,b)=>b.count-a.count);
+    const id = 'g'+idx;
+
+    // category breakdown
+    const catCounts = {};
+    items.forEach(d=>catCounts[d.cat]=(catCounts[d.cat]||0)+1);
+    const catChips = Object.entries(catCounts).sort((a,b)=>b[1]-a[1])
+      .map(([c,n])=>`<span class="badge ${BC[c]}" style="margin-right:4px">${LBL[c]} ${n}</span>`).join('');
+
     return `
-      <div class="gcard">
-        <div class="gcard-head">
+      <div class="gcard" style="width:100%;max-width:none">
+        <div class="gcard-head" onclick="toggleGrupo('${id}')" style="cursor:pointer">
           <div class="gcard-left">
             <span class="gcard-icon">${icon}</span>
             <div>
               <div class="gcard-title">${grupo}</div>
-              <div class="gcard-sub">${insRows.length} insumo${insRows.length!==1?'s':''}</div>
+              <div class="gcard-sub">${insRows.length} insumo${insRows.length!==1?'s':''} · ${items.length} registros</div>
             </div>
           </div>
-          <div class="gcard-total">${items.length}</div>
+          <div style="display:-webkit-flex;display:flex;align-items:center;gap:10px">
+            <div class="gcard-total">${items.length}</div>
+            <span id="arr-${id}" style="color:#9a8f85;font-size:16px;transition:transform 0.2s">›</span>
+          </div>
         </div>
-        <div class="gcard-body">
-          ${insRows.map(r => {
-            const topCat = Object.entries(r.cats).sort((a,b)=>b[1]-a[1])[0][0];
-            return `<div class="goc">
-              <span class="goc-name">${cap(r.name)}</span>
-              <span class="goc-n">${r.count} reg.</span>
-              <span class="goc-badge"><span class="badge ${BC[topCat]}">${LBL[topCat]}</span></span>
-            </div>`;
-          }).join('')}
+        <div id="${id}" style="display:none">
+          <div style="padding:10px 14px 8px;border-bottom:1px solid #e8e0d5;display:-webkit-flex;display:flex;flex-wrap:wrap;gap:4px">${catChips}</div>
+          <div class="gcard-body">
+            ${insRows.map(r => {
+              const topCat = Object.entries(r.cats).sort((a,b)=>b[1]-a[1])[0][0];
+              const detail = r.rows.map(row=>
+                `<div style="display:-webkit-flex;display:flex;gap:6px;align-items:baseline;padding:3px 0 3px 12px;border-bottom:1px solid #f4f0eb;font-size:10px">
+                  <span style="color:#9a8f85;width:34px;flex-shrink:0">${row.fecha}</span>
+                  <span style="flex:1;color:#3d3028">${row.cantidad}${row.nota&&row.nota!=='—'?' — <span style="color:#b0a898">'+row.nota+'</span>':''}</span>
+                  <span class="badge ${BC[row.cat]}">${LBL[row.cat]}</span>
+                </div>`).join('');
+              return `
+                <div style="border-bottom:1px solid #e8e0d5">
+                  <div class="goc" onclick="toggleIns('ins-${id}-${r.name.replace(/\s/g,'_')}',this)" style="cursor:pointer">
+                    <span class="goc-name" style="font-weight:500">${cap(r.name)}</span>
+                    <span class="goc-n">${r.count} reg.</span>
+                    <span class="goc-badge"><span class="badge ${BC[topCat]}">${LBL[topCat]}</span></span>
+                    <span style="color:#c0b8ac;margin-left:4px;font-size:12px">›</span>
+                  </div>
+                  <div id="ins-${id}-${r.name.replace(/\s/g,'_')}" style="display:none">${detail}</div>
+                </div>`;
+            }).join('')}
+          </div>
         </div>
       </div>`;
   }).join('');
+}
+
+function toggleGrupo(id){
+  const el=document.getElementById(id);
+  const arr=document.getElementById('arr-'+id);
+  const open=el.style.display==='none';
+  el.style.display=open?'block':'none';
+  arr.style.transform=open?'rotate(90deg)':'rotate(0deg)';
+}
+function toggleIns(id,row){
+  const el=document.getElementById(id);
+  const arr=row.querySelector('span:last-child');
+  const open=el.style.display==='none';
+  el.style.display=open?'block':'none';
+  if(arr)arr.style.transform=open?'rotate(90deg)':'rotate(0deg)';
 }
 
 function switchView(v,btn){
