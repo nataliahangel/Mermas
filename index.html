@@ -704,6 +704,57 @@ display: flex;
 justify-content: space-between;
 }
 
+/* ── GRUPO VIEW ─────────────────────────────────── */
+.gcard {
+background: #ffffff;
+border: 1.5px solid #ddd5c8;
+border-radius: 10px;
+overflow: hidden;
+width: calc(50% - 6px);
+min-width: 240px;
+-webkit-flex: 1;
+flex: 1;
+}
+.gcard-head {
+padding: 12px 14px 10px;
+border-bottom: 1px solid #e8e0d5;
+display: -webkit-flex;
+display: flex;
+-webkit-justify-content: space-between;
+justify-content: space-between;
+-webkit-align-items: center;
+align-items: center;
+gap: 10px;
+}
+.gcard-left { display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:10px;-webkit-flex:1;flex:1; }
+.gcard-icon { font-size: 22px; line-height: 1; }
+.gcard-title { font-weight: 500; font-size: 13px; color: #1a1210; }
+.gcard-sub { font-size: 9px; color: #9a8f85; margin-top: 2px; letter-spacing: 0.06em; }
+.gcard-total {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-size: 22px;
+color: #c93605;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-webkit-flex-shrink: 0;
+flex-shrink: 0;
+}
+.gcard-body { padding: 7px 14px 11px; }
+.goc {
+display: -webkit-flex;
+display: flex;
+gap: 6px;
+-webkit-align-items: baseline;
+align-items: baseline;
+padding: 4px 0;
+border-bottom: 1px solid #e8e0d5;
+font-size: 11px;
+}
+.goc:last-child { border-bottom: none; }
+.goc-name { -webkit-flex: 1; flex: 1; color: #3d3028; text-transform: capitalize; }
+.goc-n { font-size: 10px; color: #9a8f85; white-space: nowrap; }
+.goc-badge { -webkit-flex-shrink:0; flex-shrink:0; }
+
 /* ── RESPONSIVE ────────────────────────────────── */
 @media (max-width: 860px) {
 .sidebar { width: 250px; }
@@ -727,6 +778,7 @@ justify-content: space-between;
 .tc-resp { display: none; }
 .i-grid { -webkit-flex-direction: column; flex-direction: column; }
 .icard { width: 100%; }
+.gcard { width: 100%; }
 }
 @media (max-width: 440px) {
 .kpi { padding: 12px 14px; }
@@ -768,6 +820,7 @@ th:last-child, td:last-child { display: none; }
 <div class="view-tabs">
   <button class="view-tab active" onclick="switchView('r',this)">Registros</button>
   <button class="view-tab" onclick="switchView('i',this)">Por insumo</button>
+  <button class="view-tab" onclick="switchView('g',this)">Por grupo</button>
 </div>
 
 <!-- VISTA REGISTROS -->
@@ -825,6 +878,11 @@ th:last-child, td:last-child { display: none; }
     <span class="i-count" id="iCount"></span>
   </div>
   <div class="i-grid" id="iGrid"></div>
+</div>
+
+<!-- VISTA POR GRUPO -->
+<div id="vG" style="display:none">
+  <div class="i-grid" id="gGrid"></div>
 </div>
 ```
 
@@ -1071,6 +1129,13 @@ const DATA=[
   {fecha:'22/04',insumo:'Arroz',cantidad:'2 kg',cat:'perso',nota:'Perso',resp:'Caco'},
   {fecha:'22/04',insumo:'Ajo',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Caco'},
   {fecha:'22/04',insumo:'Jengibre',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Caco'},
+
+  // 22/04 — Ale
+  {fecha:'22/04',insumo:'Arancini',cantidad:'10 u',cat:'mal-estado',nota:'Mal estado',resp:'Ale'},
+  {fecha:'22/04',insumo:'Queso llanero',cantidad:'90 g',cat:'quemado',nota:'Quemado',resp:'Ale'},
+  {fecha:'22/04',insumo:'Pizza margha',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Ale'},
+  {fecha:'22/04',insumo:'Focaccia',cantidad:'10 u',cat:'otro',nota:'Sobró del servicio',resp:'Ale'},
+  {fecha:'22/04',insumo:'Pan de pizza',cantidad:'5 u',cat:'otro',nota:'Sobró del servicio',resp:'Ale'},
 ];
 
 const LBL={'mal-estado':'Mal estado','quemado':'Quemado','roto':'Roto','perso':'Perso','fecha':'Vencido','prueba':'Prueba','limpieza':'Limpieza','otro':'Otro'};
@@ -1164,8 +1229,9 @@ function gF(){
   const mot=document.getElementById('sMot').value;
   return DATA.filter(d=>(catF==='all'||d.cat===catF)&&(!ins||d.insumo===ins)&&(!per||d.resp===per)&&(!mot||d.cat===mot));
 }
+function sortDesc(arr){return [...arr].sort((a,b)=>parseDate(b.fecha)-parseDate(a.fecha));}
 function applySearch(){
-  const f=gF();
+  const f=sortDesc(gF());
   rTable(f);
   const sr=document.getElementById('tCount');if(sr)sr.textContent=f.length+' resultado'+(f.length!==1?'s':'');
   document.getElementById('fCount').textContent=f.length+' registros';
@@ -1175,12 +1241,12 @@ function clearSearch(){
   catF='all';
   document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.chip')[0].classList.add('active');
-  rTable(DATA);rKPIs(DATA);
+  rTable(sortDesc(DATA));rKPIs(DATA);
   document.getElementById('tCount').textContent='';
   document.getElementById('fCount').textContent=DATA.length+' registros totales';
 }
-function fAll(btn){catF='all';sChip(btn);const f=gF();rTable(f);rKPIs(f);}
-function fCat(btn,cat){catF=cat;sChip(btn);const f=gF();rTable(f);rKPIs(f);}
+function fAll(btn){catF='all';sChip(btn);const f=sortDesc(gF());rTable(f);rKPIs(gF());}
+function fCat(btn,cat){catF=cat;sChip(btn);const f=sortDesc(gF());rTable(f);rKPIs(gF());}
 function sChip(btn){document.querySelectorAll('.chip').forEach(b=>b.classList.remove('active'));btn.classList.add('active');}
 
 function parseQ(s){
@@ -1222,11 +1288,114 @@ function rInsGrid(list){
 }
 function filterI(q){rInsGrid(insD.filter(d=>d.name.toLowerCase().includes(q.toLowerCase())));}
 
+// ── GRUPOS ───────────────────────────────────────
+const GRUPOS = {
+  'Verduras y hojas': {
+    icon: '🥬',
+    keys: ['lechuga','verdeo','perejil','espinaca','acelga','kale','rúcula','albahaca','cilantro','menta','eneldo','tomillo','orégano','huacatay','ciboulettes','puerro','pencas de acelga','hojas de puerro','relleno dm','ají','boniato','brócoli','pepino','remolacha','nabo','zanahoria','tomate','tomate redondo','tomate perita','tomate de árbol','tomate de árbol','cúrcuma','jengibre','ajo','girgolas','melena','hongo','baos','girgolas taco cocida']
+  },
+  'Frutas': {
+    icon: '🍓',
+    keys: ['frutilla','frutillas','frambuesa','palta','naranja','limón','limones','coco']
+  },
+  'Lácteos y quesos': {
+    icon: '🧀',
+    keys: ['queso','gouda','llanero','queso llanero','provolone','crema ácida','butter','butters','cremoso']
+  },
+  'Masas y panificación': {
+    icon: '🍕',
+    keys: ['focaccia','pizza','fainazzeta','marga','empanada','empanadas','tapas de empanada','bollo','ciabatta','pan','masa','lasaña','canelón','polenta','tortilla','baos','chilaquiles','tapa']
+  },
+  'Proteínas y carnes': {
+    icon: '🥩',
+    keys: ['milanesa','recortes milanesas','huevos','huevo','pallares','garbanzo']
+  },
+  'Salsas y preparaciones': {
+    icon: '🫙',
+    keys: ['vinagreta','salsa','romesco','alioli','criolla','yasgua','chimi','mep','huevada','cremoso palta','cremoso chocolate','relleno','mousse','merengue','mousse chocolate','hoja higuera']
+  },
+  'Caldos y líquidos': {
+    icon: '🍲',
+    keys: ['caldo','aceite']
+  },
+  'Granos y secos': {
+    icon: '🌾',
+    keys: ['arroz','garbanzo cocido','pallares listo','coco en escamas']
+  },
+  'Postres y repostería': {
+    icon: '🍮',
+    keys: ['alfajor','sablée','tapas alfajor','merengue','mousse','cremoso chocolate']
+  },
+  'Otros': {
+    icon: '📦',
+    keys: []
+  }
+};
+
+function getGrupo(insumo) {
+  const k = insumo.toLowerCase();
+  for (const [grupo, {keys}] of Object.entries(GRUPOS)) {
+    if (grupo === 'Otros') continue;
+    if (keys.some(kw => k.includes(kw))) return grupo;
+  }
+  return 'Otros';
+}
+
+function rGrupoView() {
+  const map = {};
+  DATA.forEach(d => {
+    const g = getGrupo(d.insumo);
+    if (!map[g]) map[g] = [];
+    map[g].push(d);
+  });
+
+  // sort groups by count desc
+  const sorted = Object.entries(map).sort((a,b) => b[1].length - a[1].length);
+
+  // within each group, aggregate by insumo
+  document.getElementById('gGrid').innerHTML = sorted.map(([grupo, items]) => {
+    const {icon} = GRUPOS[grupo] || {icon:'📦'};
+    const byIns = {};
+    items.forEach(d => {
+      const k = d.insumo.toLowerCase();
+      if (!byIns[k]) byIns[k] = {name: d.insumo, count: 0, cats: {}};
+      byIns[k].count++;
+      byIns[k].cats[d.cat] = (byIns[k].cats[d.cat]||0)+1;
+    });
+    const insRows = Object.values(byIns).sort((a,b)=>b.count-a.count);
+    return `
+      <div class="gcard">
+        <div class="gcard-head">
+          <div class="gcard-left">
+            <span class="gcard-icon">${icon}</span>
+            <div>
+              <div class="gcard-title">${grupo}</div>
+              <div class="gcard-sub">${insRows.length} insumo${insRows.length!==1?'s':''}</div>
+            </div>
+          </div>
+          <div class="gcard-total">${items.length}</div>
+        </div>
+        <div class="gcard-body">
+          ${insRows.map(r => {
+            const topCat = Object.entries(r.cats).sort((a,b)=>b[1]-a[1])[0][0];
+            return `<div class="goc">
+              <span class="goc-name">${cap(r.name)}</span>
+              <span class="goc-n">${r.count} reg.</span>
+              <span class="goc-badge"><span class="badge ${BC[topCat]}">${LBL[topCat]}</span></span>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
+  }).join('');
+}
+
 function switchView(v,btn){
   document.querySelectorAll('.view-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
   document.getElementById('vR').style.display=v==='r'?'block':'none';
   document.getElementById('vI').style.display=v==='i'?'block':'none';
+  document.getElementById('vG').style.display=v==='g'?'block':'none';
   if(v==='i')rInsView(DATA);
+  if(v==='g')rGrupoView();
 }
 function openProfile(name){
   const items = DATA.filter(d=>d.resp===name);
@@ -1276,7 +1445,9 @@ function toggleSidebar(){document.getElementById('sidebar').classList.toggle('op
 function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
 
 populateSelects();
-rKPIs(DATA);rTable(DATA);rSidebar();
+function parseDate(f){const[d,m]=f.split('/').map(Number);return m*100+d;}
+
+rKPIs(DATA);rTable([...DATA].reverse());rSidebar();
 document.getElementById('fCount').textContent=DATA.length+' registros totales';
 </script>
 
