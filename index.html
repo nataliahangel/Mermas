@@ -4,11 +4,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
 <title>Mermas — Chuí</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-html { font-size: 14px; -webkit-text-size-adjust: 100%; }
+html { font-size: 14px; -webkit-text-size-adjust: 100%; color-scheme: light; }
 body {
   background: #f0ebe4;
   color: #1a1210;
@@ -16,7 +18,12 @@ body {
   font-size: 13px;
   line-height: 1.5;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
+table, tbody, tr, td, th { background-color: transparent; }
+tbody { background: #ffffff; }
+tbody tr { background: #ffffff; }
+thead tr { background: #faf7f3 !important; }
 
 /* ── TOPBAR ────────────────────────────────────── */
 .topbar {
@@ -755,6 +762,117 @@ font-size: 11px;
 .goc-n { font-size: 10px; color: #9a8f85; white-space: nowrap; }
 .goc-badge { -webkit-flex-shrink:0; flex-shrink:0; }
 
+/* ── COMPARATIVA VIEW ──────────────────────────── */
+.cmp-section {
+background: #ffffff;
+border: 1.5px solid #ddd5c8;
+border-radius: 10px;
+padding: 16px 18px;
+margin-bottom: 12px;
+}
+.cmp-h {
+font-size: 10px;
+color: #9a8f85;
+text-transform: uppercase;
+letter-spacing: 0.18em;
+margin-bottom: 14px;
+font-weight: 500;
+}
+.cmp-weeks {
+display: -webkit-flex;
+display: flex;
+gap: 10px;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+.cmp-week {
+-webkit-flex: 1;
+flex: 1;
+min-width: 140px;
+background: #faf7f3;
+border: 1.5px solid #ddd5c8;
+border-radius: 8px;
+padding: 12px 14px;
+position: relative;
+}
+.cmp-week.current { background: #fff0eb; border-color: #c93605; }
+.cmp-week-label { font-size: 9px; color: #9a8f85; text-transform: uppercase; letter-spacing: 0.14em; }
+.cmp-week-range { font-size: 10px; color: #3d3028; margin-top: 2px; font-weight: 500; }
+.cmp-week-total {
+font-family: ‘Playfair Display’, Georgia, serif;
+font-size: 28px;
+color: #c93605;
+line-height: 1;
+margin-top: 8px;
+-webkit-font-smoothing: antialiased;
+}
+.cmp-week-sub { font-size: 10px; color: #9a8f85; margin-top: 3px; }
+.cmp-delta {
+display: inline-block;
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 0.04em;
+padding: 2px 7px;
+border-radius: 3px;
+margin-top: 6px;
+}
+.cmp-delta.up { color: #a01c06; background: #fde8e3; }
+.cmp-delta.down { color: #0a5528; background: #dff2e6; }
+.cmp-delta.flat { color: #4a4038; background: #eeebe5; }
+
+.cmp-bars { margin-top: 4px; }
+.cmp-bar-row {
+display: -webkit-flex;
+display: flex;
+-webkit-align-items: center;
+align-items: center;
+gap: 10px;
+margin-bottom: 8px;
+}
+.cmp-bar-lbl {
+width: 110px;
+font-size: 11px;
+color: #3d3028;
+text-transform: capitalize;
+-webkit-flex-shrink: 0;
+flex-shrink: 0;
+}
+.cmp-bars-stack {
+-webkit-flex: 1;
+flex: 1;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: column;
+flex-direction: column;
+gap: 3px;
+}
+.cmp-bar-line {
+display: -webkit-flex;
+display: flex;
+-webkit-align-items: center;
+align-items: center;
+gap: 6px;
+}
+.cmp-bar-wlbl { font-size: 9px; color: #9a8f85; width: 38px; -webkit-flex-shrink: 0; flex-shrink: 0; letter-spacing: 0.04em; }
+.cmp-bar-track { -webkit-flex: 1; flex: 1; height: 6px; background: #f0ebe4; border-radius: 3px; overflow: hidden; }
+.cmp-bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+.cmp-bar-n { font-size: 10px; color: #3d3028; width: 26px; text-align: right; -webkit-flex-shrink: 0; flex-shrink: 0; font-weight: 500; }
+
+.cmp-insights {
+background: #fdf8f5;
+border-left: 3px solid #c93605;
+border-radius: 0 6px 6px 0;
+padding: 12px 14px;
+margin-top: 12px;
+}
+.cmp-insight {
+font-size: 11px;
+line-height: 1.6;
+color: #3d3028;
+padding: 4px 0;
+}
+.cmp-insight strong { color: #c93605; font-weight: 600; }
+
 /* ── RESPONSIVE ────────────────────────────────── */
 @media (max-width: 860px) {
 .sidebar { width: 250px; }
@@ -784,7 +902,6 @@ font-size: 11px;
 .kpi { padding: 12px 14px; }
 .kpi-val { font-size: 22px; }
 .brand-name { font-size: 17px; }
-.tc-fecha { display: none; }
 .ioc { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
 .ioc-f { display: none; }
 th:last-child, td:last-child { display: none; }
@@ -821,6 +938,7 @@ th:last-child, td:last-child { display: none; }
   <button class="view-tab active" onclick="switchView('r',this)">Registros</button>
   <button class="view-tab" onclick="switchView('i',this)">Por insumo</button>
   <button class="view-tab" onclick="switchView('g',this)">Por grupo</button>
+  <button class="view-tab" onclick="switchView('c',this)">Comparativa</button>
 </div>
 
 <!-- VISTA REGISTROS -->
@@ -883,6 +1001,11 @@ th:last-child, td:last-child { display: none; }
 <!-- VISTA POR GRUPO -->
 <div id="vG" style="display:none">
   <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:10px" id="gGrid"></div>
+</div>
+
+<!-- VISTA COMPARATIVA -->
+<div id="vC" style="display:none">
+  <div id="cWrap" style="padding:16px"></div>
 </div>
 ```
 
@@ -1520,13 +1643,156 @@ function toggleIns(id,row){
   if(arr)arr.style.transform=open?'rotate(90deg)':'rotate(0deg)';
 }
 
+// ── COMPARATIVA SEMANAL ─────────────────────────
+// Week 1: 8-14/04 | Week 2: 15-21/04 | Week 3: 22-28/04 | Week 4: 29-30/04 (parcial)
+function getWeek(fecha){
+  const [d,m] = fecha.split('/').map(Number);
+  if (m === 4) {
+    if (d >= 8 && d <= 14) return 1;
+    if (d >= 15 && d <= 21) return 2;
+    if (d >= 22 && d <= 28) return 3;
+    if (d >= 29 && d <= 30) return 4;
+  }
+  return 0;
+}
+const WEEK_LABELS = {
+  1: { name: 'Semana 1', range: '8 — 14 abril', days: 7 },
+  2: { name: 'Semana 2', range: '15 — 21 abril', days: 7 },
+  3: { name: 'Semana 3', range: '22 — 28 abril', days: 7 },
+  4: { name: 'Semana 4', range: '29 — 30 abril', days: 2 }
+};
+
+function rCmpView(){
+  // group by week
+  const weeks = {1:[], 2:[], 3:[], 4:[]};
+  DATA.forEach(d => {
+    const w = getWeek(d.fecha);
+    if (w) weeks[w].push(d);
+  });
+
+  // Section 1: Totales por semana
+  const totalsHtml = [1,2,3,4].map(w => {
+    const items = weeks[w];
+    const prev = w > 1 ? weeks[w-1].length : null;
+    const curr = items.length;
+    const isLast = w === 4;
+    let delta = '';
+    if (prev !== null && prev > 0) {
+      // for week 4 (partial), normalize to per-day rate
+      const prevRate = prev / WEEK_LABELS[w-1].days;
+      const currRate = curr / WEEK_LABELS[w].days;
+      const pct = Math.round(((currRate - prevRate) / prevRate) * 100);
+      const cls = pct > 5 ? 'up' : pct < -5 ? 'down' : 'flat';
+      const arrow = pct > 5 ? '↑' : pct < -5 ? '↓' : '→';
+      const suffix = isLast ? ' /día' : '';
+      delta = `<div class="cmp-delta ${cls}">${arrow} ${pct >= 0 ? '+' : ''}${pct}%${suffix}</div>`;
+    }
+    const perDay = (curr / WEEK_LABELS[w].days).toFixed(1);
+    return `
+      <div class="cmp-week ${isLast ? 'current' : ''}">
+        <div class="cmp-week-label">${WEEK_LABELS[w].name}</div>
+        <div class="cmp-week-range">${WEEK_LABELS[w].range}</div>
+        <div class="cmp-week-total">${curr}</div>
+        <div class="cmp-week-sub">${perDay} reg/día · ${WEEK_LABELS[w].days} días</div>
+        ${delta}
+      </div>`;
+  }).join('');
+
+  // Section 2: Por motivo, semana a semana
+  const allCats = ['mal-estado','quemado','roto','fecha','perso','otro','prueba','limpieza'];
+  const catBars = allCats.map(cat => {
+    const counts = [1,2,3,4].map(w => weeks[w].filter(d=>d.cat===cat).length);
+    const max = Math.max(...counts, 1);
+    const colorMap = {'mal-estado':'#c02a0a','quemado':'#c8a020','roto':'#1a8c5a','fecha':'#9b4c00','perso':'#196a43','prueba':'#7a0099','limpieza':'#2a3a9e','otro':'#4a4540'};
+    const color = colorMap[cat];
+    return `
+      <div class="cmp-bar-row">
+        <span class="cmp-bar-lbl">${LBL[cat]}</span>
+        <div class="cmp-bars-stack">
+          ${counts.map((n,i)=>`
+            <div class="cmp-bar-line">
+              <span class="cmp-bar-wlbl">S${i+1}</span>
+              <div class="cmp-bar-track"><div class="cmp-bar-fill" style="width:${n/max*100}%;background:${color}"></div></div>
+              <span class="cmp-bar-n">${n}</span>
+            </div>`).join('')}
+        </div>
+      </div>`;
+  }).join('');
+
+  // Section 3: Top 5 insumos que más cambiaron
+  const insByWeek = {1:{}, 2:{}, 3:{}, 4:{}};
+  Object.entries(weeks).forEach(([w, items])=>{
+    items.forEach(d=>{
+      const k = d.insumo.toLowerCase();
+      insByWeek[w][k] = (insByWeek[w][k]||0)+1;
+    });
+  });
+  // Compare week 3 vs week 2 (last full weeks)
+  const allInsumos = new Set();
+  Object.values(insByWeek).forEach(w=>Object.keys(w).forEach(k=>allInsumos.add(k)));
+  const changes = [...allInsumos].map(k => {
+    const s2 = insByWeek[2][k] || 0;
+    const s3 = insByWeek[3][k] || 0;
+    return { name: k, s2, s3, diff: s3 - s2 };
+  }).filter(x => Math.abs(x.diff) >= 2)
+    .sort((a,b) => Math.abs(b.diff) - Math.abs(a.diff))
+    .slice(0,6);
+
+  const changesHtml = changes.length ? changes.map(c=>{
+    const isUp = c.diff > 0;
+    const color = isUp ? '#c02a0a' : '#0a5528';
+    const bg = isUp ? '#fde8e3' : '#dff2e6';
+    const arrow = isUp ? '↑' : '↓';
+    return `
+      <div style="display:-webkit-flex;display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #f0ebe4">
+        <span style="font-size:12px;color:#1a1210;text-transform:capitalize;font-weight:500">${cap(c.name)}</span>
+        <div style="display:-webkit-flex;display:flex;align-items:center;gap:10px">
+          <span style="font-size:10px;color:#9a8f85">S2: ${c.s2}  →  S3: ${c.s3}</span>
+          <span style="background:${bg};color:${color};padding:2px 8px;border-radius:3px;font-size:10px;font-weight:600">${arrow} ${isUp?'+':''}${c.diff}</span>
+        </div>
+      </div>`;
+  }).join('') : '<div style="font-size:11px;color:#9a8f85;padding:8px 0">Sin cambios significativos.</div>';
+
+  // Insights
+  const w2tot = weeks[2].length, w3tot = weeks[3].length;
+  const trendPct = w2tot ? Math.round(((w3tot - w2tot) / w2tot) * 100) : 0;
+  const trendDir = trendPct > 5 ? 'subió' : trendPct < -5 ? 'bajó' : 'se mantuvo estable';
+  const w3Cats = {};
+  weeks[3].forEach(d=>w3Cats[d.cat]=(w3Cats[d.cat]||0)+1);
+  const topW3 = Object.entries(w3Cats).sort((a,b)=>b[1]-a[1])[0];
+
+  const insightsHtml = `
+    <div class="cmp-insight">Entre la <strong>S2 (15-21/04)</strong> y la <strong>S3 (22-28/04)</strong> el volumen total de mermas <strong>${trendDir}</strong> ${trendPct !== 0 ? `(${trendPct>0?'+':''}${trendPct}%)` : ''}.</div>
+    ${topW3 ? `<div class="cmp-insight">La causa dominante de la última semana completa fue <strong>${LBL[topW3[0]]}</strong> con ${topW3[1]} registros.</div>` : ''}
+    ${changes.length ? `<div class="cmp-insight">El insumo con mayor cambio fue <strong>${cap(changes[0].name)}</strong> (${changes[0].diff > 0 ? '+' : ''}${changes[0].diff} registros vs. semana anterior).</div>` : ''}
+  `;
+
+  document.getElementById('cWrap').innerHTML = `
+    <div class="cmp-section">
+      <div class="cmp-h">Volumen por semana</div>
+      <div class="cmp-weeks">${totalsHtml}</div>
+      <div class="cmp-insights">${insightsHtml}</div>
+    </div>
+    <div class="cmp-section">
+      <div class="cmp-h">Por motivo, semana a semana</div>
+      <div class="cmp-bars">${catBars}</div>
+    </div>
+    <div class="cmp-section">
+      <div class="cmp-h">Insumos con mayor cambio (S2 → S3)</div>
+      ${changesHtml}
+    </div>
+  `;
+}
+
 function switchView(v,btn){
   document.querySelectorAll('.view-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
   document.getElementById('vR').style.display=v==='r'?'block':'none';
   document.getElementById('vI').style.display=v==='i'?'block':'none';
   document.getElementById('vG').style.display=v==='g'?'block':'none';
+  document.getElementById('vC').style.display=v==='c'?'block':'none';
   if(v==='i')rInsView(DATA);
   if(v==='g')rGrupoView();
+  if(v==='c')rCmpView();
 }
 function openProfile(name){
   const items = DATA.filter(d=>d.resp===name);
