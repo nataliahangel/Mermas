@@ -918,7 +918,7 @@ th:last-child, td:last-child { display: none; }
   <span class="brand-sep">|</span>
   <span class="brand-sub">Control de Mermas</span>
   <div class="topbar-right">
-    <span class="topbar-date"><strong>8 — 30 abril 2026</strong></span>
+    <span class="topbar-date"><strong>8 abril — 3 mayo 2026</strong></span>
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
   </div>
 </header>
@@ -938,6 +938,7 @@ th:last-child, td:last-child { display: none; }
   <button class="view-tab active" onclick="switchView('r',this)">Registros</button>
   <button class="view-tab" onclick="switchView('i',this)">Por insumo</button>
   <button class="view-tab" onclick="switchView('g',this)">Por grupo</button>
+  <button class="view-tab" onclick="switchView('s',this)">Por semana</button>
   <button class="view-tab" onclick="switchView('c',this)">Comparativa</button>
 </div>
 
@@ -1001,6 +1002,11 @@ th:last-child, td:last-child { display: none; }
 <!-- VISTA POR GRUPO -->
 <div id="vG" style="display:none">
   <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:10px" id="gGrid"></div>
+</div>
+
+<!-- VISTA POR SEMANA -->
+<div id="vS" style="display:none">
+  <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:12px" id="sGrid"></div>
 </div>
 
 <!-- VISTA COMPARATIVA -->
@@ -1153,8 +1159,13 @@ const DATA=[
   {fecha:'15/04',insumo:'Frambuesa',cantidad:'4 cubetas',cat:'fecha',nota:'Del 10/04 — mal estado',resp:'Daniela Romero'},
   {fecha:'15/04',insumo:'Verdeo (parte verde)',cantidad:'800 g',cat:'otro',nota:'—',resp:'Daniela Romero'},
   {fecha:'15/04',insumo:'Recortes milanesas',cantidad:'250 g',cat:'perso',nota:'Perso',resp:'Celeste Falcon'},
-  {fecha:'15/04',insumo:'Hojas de puerro',cantidad:'1 kg',cat:'mal-estado',nota:'Podridas',resp:'Celeste Falcon'},
-  {fecha:'15/04',insumo:'Pencas de acelga',cantidad:'750 g',cat:'mal-estado',nota:'Podridas',resp:'Celeste Falcon'},
+  // 16/04 — Celeste
+  {fecha:'16/04',insumo:'Hojas de puerro',cantidad:'1 kg',cat:'mal-estado',nota:'Podridas',resp:'Celeste Falcon'},
+  {fecha:'16/04',insumo:'Pencas de acelga',cantidad:'750 g',cat:'mal-estado',nota:'Podridas',resp:'Celeste Falcon'},
+  {fecha:'16/04',insumo:'Garbanzo',cantidad:'400 g',cat:'mal-estado',nota:'Mal estado',resp:'Celeste Falcon'},
+  {fecha:'16/04',insumo:'Polenta',cantidad:'1.157 kg',cat:'perso',nota:'Perso del 14/04',resp:'Celeste Falcon'},
+  {fecha:'16/04',insumo:'Hummus',cantidad:'767 g',cat:'mal-estado',nota:'Perso, mal estado',resp:'Celeste Falcon'},
+  {fecha:'16/04',insumo:'Pesto de polenta',cantidad:'800 g',cat:'mal-estado',nota:'Mal estado',resp:'Celeste Falcon'},
   {fecha:'15/04',insumo:'Lechuga capuchina',cantidad:'550 g',cat:'mal-estado',nota:'Mal estado',resp:'Tomas'},
   {fecha:'15/04',insumo:'Butter',cantidad:'1 u',cat:'otro',nota:'Mal hecho',resp:'Tomas'},
   {fecha:'15/04',insumo:'Mousse',cantidad:'1 u',cat:'otro',nota:'Mal hecho',resp:'Tomas'},
@@ -1168,13 +1179,6 @@ const DATA=[
   {fecha:'17/04',insumo:'Alioli berenjena',cantidad:'—',cat:'otro',nota:'Cambio de carta (14/04)',resp:'Celeste Falcon'},
   {fecha:'17/04',insumo:'Provolone',cantidad:'300 g',cat:'perso',nota:'Perso',resp:'Tomas'},
   {fecha:'17/04',insumo:'Pizza margha',cantidad:'1 u',cat:'quemado',nota:'Quemada',resp:'Tomas'},
-  {fecha:'17/04',insumo:'Pizza 4 quesos',cantidad:'2 u',cat:'quemado',nota:'Quemadas',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Caldo claro',cantidad:'1 L',cat:'otro',nota:'Error de MEP',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Verdeo',cantidad:'235 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Garbanzo cocido',cantidad:'165 g',cat:'perso',nota:'Perso',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Focaccia',cantidad:'1 porción',cat:'quemado',nota:'Quemada',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Chips boniato',cantidad:'220 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
-  {fecha:'17/04',insumo:'Queso llanero',cantidad:'3 pax',cat:'otro',nota:'Derretido',resp:'Shalmi'},
   {fecha:'17/04',insumo:'Pizza 4 quesos',cantidad:'2 u',cat:'quemado',nota:'Quemadas',resp:'Shalmi'},
   {fecha:'17/04',insumo:'Caldo claro',cantidad:'1 L',cat:'otro',nota:'Error de MEP',resp:'Shalmi'},
   {fecha:'17/04',insumo:'Verdeo',cantidad:'235 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
@@ -1216,6 +1220,19 @@ const DATA=[
   {fecha:'19/04',insumo:'Pizza 4 quesos',cantidad:'1 u',cat:'otro',nota:'Sin motivo',resp:'Mica'},
   {fecha:'19/04',insumo:'Arroz',cantidad:'500 g',cat:'otro',nota:'Sin motivo',resp:'Mica'},
   {fecha:'19/04',insumo:'Queso',cantidad:'2 porciones',cat:'quemado',nota:'Quemado/derretido',resp:'Mica'},
+
+  // 20/04 — Celeste
+  {fecha:'20/04',insumo:'Sandía',cantidad:'—',cat:'mal-estado',nota:'Del 13/04 — babosa, olvido de tirar',resp:'Celeste Falcon'},
+  {fecha:'20/04',insumo:'Milanesas de girgolas',cantidad:'900 g',cat:'fecha',nota:'Del 13/04',resp:'Celeste Falcon'},
+
+  // 20/04 — Shalmi (mermas 20/4)
+  {fecha:'20/04',insumo:'Masa de faina',cantidad:'7.735 kg',cat:'fecha',nota:'Fecha',resp:'Shalmi'},
+  {fecha:'20/04',insumo:'Omelette',cantidad:'2 u',cat:'otro',nota:'Mal marchado',resp:'Shalmi'},
+  {fecha:'20/04',insumo:'Salsa ocopa',cantidad:'754 g',cat:'fecha',nota:'Fecha',resp:'Shalmi'},
+  {fecha:'20/04',insumo:'Focaccia',cantidad:'3 porciones',cat:'quemado',nota:'Quemadas',resp:'Shalmi'},
+  {fecha:'20/04',insumo:'Pizza marga',cantidad:'1 u',cat:'perso',nota:'Perso',resp:'Shalmi'},
+  {fecha:'20/04',insumo:'Vinagreta limones',cantidad:'150 g',cat:'mal-estado',nota:'Fermentada',resp:'Shalmi'},
+
   {fecha:'21/04',insumo:'Pizza margha',cantidad:'2 u',cat:'roto',nota:'Rotas',resp:'Tomas'},
   {fecha:'21/04',insumo:'Criolla',cantidad:'350 g',cat:'fecha',nota:'Fecha',resp:'Tomas'},
   // 21/04 — Alejandra
@@ -1253,6 +1270,16 @@ const DATA=[
   {fecha:'22/04',insumo:'Ajo',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Caco'},
   {fecha:'22/04',insumo:'Jengibre',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Caco'},
 
+  // 22/04 — Gabriel
+  {fecha:'22/04',insumo:'Masa de lasaña',cantidad:'3.075 kg',cat:'mal-estado',nota:'Mal estado',resp:'Gabriel Rolando'},
+
+  // 23/04 — Ezequiel
+  {fecha:'23/04',insumo:'Tomate',cantidad:'565 g',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
+  {fecha:'23/04',insumo:'Cilantro',cantidad:'1 atado',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
+
+  // 23/04 — Celeste
+  {fecha:'23/04',insumo:'Garbanzos fritos',cantidad:'150 g',cat:'otro',nota:'Duros',resp:'Celeste Falcon'},
+
   // 22/04 — Ale
   {fecha:'22/04',insumo:'Arancini',cantidad:'10 u',cat:'mal-estado',nota:'Mal estado',resp:'Ale'},
   {fecha:'22/04',insumo:'Queso llanero',cantidad:'90 g',cat:'quemado',nota:'Quemado',resp:'Ale'},
@@ -1283,6 +1310,13 @@ const DATA=[
   {fecha:'24/04',insumo:'Mango',cantidad:'260 g',cat:'mal-estado',nota:'Pasado',resp:'Mel'},
   {fecha:'24/04',insumo:'Aquafaba',cantidad:'150 g',cat:'mal-estado',nota:'Mal estado',resp:'Mel'},
 
+  // 24/04 — Ezequiel
+  {fecha:'24/04',insumo:'Cilantro',cantidad:'2 atados',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
+
+  // 24/04 — Celeste
+  {fecha:'24/04',insumo:'Apio',cantidad:'315 g',cat:'mal-estado',nota:'Oxidado',resp:'Celeste Falcon'},
+  {fecha:'24/04',insumo:'Ciboulette picado seco',cantidad:'22 g',cat:'mal-estado',nota:'Amarillo',resp:'Celeste Falcon'},
+
   // 25/04 — Ezequiel
   {fecha:'25/04',insumo:'Tapas de empanada',cantidad:'2 u',cat:'roto',nota:'Rotas',resp:'Ezequiel'},
 
@@ -1298,11 +1332,14 @@ const DATA=[
   {fecha:'25/04',insumo:'Lechuga',cantidad:'715 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
   {fecha:'25/04',insumo:'Pizza 4 quesos',cantidad:'2 u',cat:'roto',nota:'Rota',resp:'Shalmi'},
 
+  // 25/04 — Gabriel
+  {fecha:'25/04',insumo:'Focaccia',cantidad:'1 u entera',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
+
   // 26/04 — Gabriel
-  {fecha:'26/04',insumo:'Focaccia',cantidad:'1 porción',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
+  {fecha:'26/04',insumo:'Focaccia',cantidad:'1 u entera',cat:'perso',nota:'Perso (entera)',resp:'Gabriel Rolando'},
 
   // 27/04 — Gabriel
-  {fecha:'27/04',insumo:'Focaccia',cantidad:'1 u',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
+  {fecha:'27/04',insumo:'Focaccia',cantidad:'3 porciones',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
 
   // 27/04 — Shalmi
   {fecha:'27/04',insumo:'Focaccia',cantidad:'2 porciones',cat:'quemado',nota:'Quemadas',resp:'Shalmi'},
@@ -1351,6 +1388,78 @@ const DATA=[
 
   // 30/04 — Celeste
   {fecha:'30/04',insumo:'Salsa blanca',cantidad:'650 g',cat:'fecha',nota:'Perso, mal sabor y fecha vieja',resp:'Celeste Falcon'},
+  {fecha:'30/04',insumo:'Nabo',cantidad:'—',cat:'mal-estado',nota:'Del 27/04 — mal sabor y sin textura',resp:'Celeste Falcon'},
+  {fecha:'30/04',insumo:'Jalapeño DM',cantidad:'8 g',cat:'mal-estado',nota:'Babosos',resp:'Celeste Falcon'},
+  {fecha:'30/04',insumo:'Remolacha',cantidad:'130 g',cat:'mal-estado',nota:'Babosa, fecha 20/04',resp:'Celeste Falcon'},
+  {fecha:'30/04',insumo:'Salsa lasaña',cantidad:'90 g',cat:'fecha',nota:'Fecha 24/04',resp:'Celeste Falcon'},
+
+  // 30/04 — Tomas
+  {fecha:'30/04',insumo:'Focaccia',cantidad:'3 porciones',cat:'quemado',nota:'Quemadas',resp:'Tomas'},
+  {fecha:'30/04',insumo:'Pizza fugga',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Tomas'},
+  {fecha:'30/04',insumo:'Cebolla XO',cantidad:'135 g',cat:'mal-estado',nota:'Mal estado',resp:'Tomas'},
+
+  // 30/04 — Gabriel
+  {fecha:'30/04',insumo:'Focaccia',cantidad:'3 porciones',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
+
+  // 30/04 — Mel
+  {fecha:'30/04',insumo:'Diplomata cítrica',cantidad:'210 g',cat:'mal-estado',nota:'Mal estado',resp:'Mel'},
+  {fecha:'30/04',insumo:'Merengue alfajor',cantidad:'130 g',cat:'otro',nota:'—',resp:'Mel'},
+
+  // 30/04 — Shalmi (mermas 30/4 — enviadas 01/05)
+  {fecha:'30/04',insumo:'Focaccia',cantidad:'3 porciones',cat:'quemado',nota:'Quemadas',resp:'Shalmi'},
+  {fecha:'30/04',insumo:'Pizza marga',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Shalmi'},
+  {fecha:'30/04',insumo:'Romesco',cantidad:'400 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
+  {fecha:'30/04',insumo:'Salsa tahini',cantidad:'874 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
+
+  // 01/05 — Ezequiel
+  {fecha:'01/05',insumo:'Tomate de árbol',cantidad:'3 u',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
+  {fecha:'01/05',insumo:'Tomate redondo',cantidad:'1 u',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
+
+  // 01/05 — Celeste
+  {fecha:'01/05',insumo:'Salsa yasgua',cantidad:'—',cat:'fecha',nota:'Del 20/04, por fecha',resp:'Celeste Falcon'},
+
+  // 01/05 — Gabriel
+  {fecha:'01/05',insumo:'Focaccia',cantidad:'4 porciones',cat:'perso',nota:'Perso',resp:'Gabriel Rolando'},
+
+  // 01/05 — Mel
+  {fecha:'01/05',insumo:'Manzana verde',cantidad:'90 g',cat:'otro',nota:'Recortes de chips',resp:'Mel'},
+  {fecha:'01/05',insumo:'Escamas de coco',cantidad:'300 g',cat:'otro',nota:'Reutilizada 2da vez para infusión',resp:'Mel'},
+  {fecha:'01/05',insumo:'Butter',cantidad:'90 g',cat:'otro',nota:'Quedó muy chico para servir, tanda 27/04',resp:'Mel'},
+  {fecha:'01/05',insumo:'Naranja',cantidad:'½ u',cat:'mal-estado',nota:'Mal estado',resp:'Mel'},
+
+  // 02/05 — Mica
+  {fecha:'02/05',insumo:'Clara',cantidad:'2 L',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Queso llanero',cantidad:'2 porciones',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Fainazzeta',cantidad:'2 u',cat:'otro',nota:'Crudas',resp:'Mica'},
+  {fecha:'02/05',insumo:'Pizza margarita',cantidad:'1 u',cat:'roto',nota:'Pinchada',resp:'Mica'},
+  {fecha:'02/05',insumo:'Pizza fugga',cantidad:'1 u',cat:'roto',nota:'Pinchada',resp:'Mica'},
+  {fecha:'02/05',insumo:'Focaccia',cantidad:'6 porciones',cat:'perso',nota:'Perso',resp:'Mica'},
+  {fecha:'02/05',insumo:'Ribs',cantidad:'1 porción',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Guiso de lentejas',cantidad:'1 porción',cat:'prueba',nota:'Briefing',resp:'Mica'},
+
+  // 02/05 — Ezequiel
+  {fecha:'02/05',insumo:'Tapas de empanada',cantidad:'520 g',cat:'roto',nota:'Frágiles, manipulación',resp:'Ezequiel'},
+
+  // 02/05 — Tomas
+  {fecha:'02/05',insumo:'Pizza fugga',cantidad:'2 u',cat:'quemado',nota:'Quemadas',resp:'Tomas'},
+  {fecha:'02/05',insumo:'Pizza margha',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Tomas'},
+  {fecha:'02/05',insumo:'Focaccia',cantidad:'3 porciones',cat:'quemado',nota:'Quemadas',resp:'Tomas'},
+
+  // 02/05 — Mel
+  {fecha:'02/05',insumo:'DDL vegano',cantidad:'3 L',cat:'quemado',nota:'Se quemó',resp:'Mel'},
+  {fecha:'02/05',insumo:'Manzana',cantidad:'45 g',cat:'otro',nota:'Recortes',resp:'Mel'},
+  {fecha:'02/05',insumo:'Mango',cantidad:'90 g',cat:'mal-estado',nota:'Mal estado',resp:'Mel'},
+
+  // 02/05 — Mica (mermas 2/5 — enviadas 03/05)
+  {fecha:'02/05',insumo:'Pizza marga',cantidad:'5 u',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Bollos',cantidad:'12 u',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Pizza 4 quesos',cantidad:'2 u',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Pizza kale',cantidad:'1 u',cat:'otro',nota:'—',resp:'Mica'},
+  {fecha:'02/05',insumo:'Queso llanero',cantidad:'1 porción',cat:'otro',nota:'Derretido',resp:'Mica'},
+  {fecha:'02/05',insumo:'Papa Ana',cantidad:'2 u',cat:'perso',nota:'Perso',resp:'Mica'},
+
+  // 03/05 — Ezequiel
+  {fecha:'03/05',insumo:'Pepino',cantidad:'2 u',cat:'mal-estado',nota:'Mal estado',resp:'Ezequiel'},
 ];
 
 const LBL={'mal-estado':'Mal estado','quemado':'Quemado','roto':'Roto','perso':'Perso','fecha':'Vencido','prueba':'Prueba','limpieza':'Limpieza','otro':'Otro'};
@@ -1653,14 +1762,92 @@ function getWeek(fecha){
     if (d >= 22 && d <= 28) return 3;
     if (d >= 29 && d <= 30) return 4;
   }
+  if (m === 5) {
+    if (d >= 1 && d <= 5) return 4; // resto de la semana 4 (29/4-5/5)
+  }
   return 0;
 }
 const WEEK_LABELS = {
   1: { name: 'Semana 1', range: '8 — 14 abril', days: 7 },
   2: { name: 'Semana 2', range: '15 — 21 abril', days: 7 },
   3: { name: 'Semana 3', range: '22 — 28 abril', days: 7 },
-  4: { name: 'Semana 4', range: '29 — 30 abril', days: 2 }
+  4: { name: 'Semana 4', range: '29 abril — 3 mayo', days: 5 }
 };
+
+function rSemanaView() {
+  const weeks = {1:[], 2:[], 3:[], 4:[]};
+  DATA.forEach(d => {
+    const w = getWeek(d.fecha);
+    if (w) weeks[w].push(d);
+  });
+
+  document.getElementById('sGrid').innerHTML = [1,2,3,4].map(w => {
+    const items = weeks[w];
+    if (!items.length) return '';
+    const id = 'sw'+w;
+
+    // Aggregate by category
+    const byCat = {};
+    items.forEach(d => byCat[d.cat] = (byCat[d.cat]||0)+1);
+    const catBadges = Object.entries(byCat).sort((a,b)=>b[1]-a[1])
+      .map(([c,n])=>`<span class="badge ${BC[c]}" style="margin-right:4px">${LBL[c]} ${n}</span>`).join('');
+
+    // Group by date within week
+    const byDate = {};
+    items.forEach(d => {
+      if (!byDate[d.fecha]) byDate[d.fecha] = [];
+      byDate[d.fecha].push(d);
+    });
+    const sortedDates = Object.keys(byDate).sort((a,b)=>parseDate(a)-parseDate(b));
+
+    const days = sortedDates.length;
+    const perDay = (items.length / WEEK_LABELS[w].days).toFixed(1);
+
+    return `
+      <div class="gcard" style="width:100%;max-width:none">
+        <div class="gcard-head" onclick="toggleGrupo('${id}')" style="cursor:pointer">
+          <div class="gcard-left">
+            <span class="gcard-icon">📅</span>
+            <div>
+              <div class="gcard-title">${WEEK_LABELS[w].name}</div>
+              <div class="gcard-sub">${WEEK_LABELS[w].range} · ${days} día${days>1?'s':''} con registro · ${perDay} reg/día</div>
+            </div>
+          </div>
+          <div style="display:-webkit-flex;display:flex;align-items:center;gap:10px">
+            <div class="gcard-total">${items.length}</div>
+            <span id="arr-${id}" style="color:#9a8f85;font-size:16px;transition:transform 0.2s">›</span>
+          </div>
+        </div>
+        <div id="${id}" style="display:none">
+          <div style="padding:10px 14px 8px;border-bottom:1px solid #e8e0d5;display:-webkit-flex;display:flex;flex-wrap:wrap;gap:4px">${catBadges}</div>
+          <div class="gcard-body">
+            ${sortedDates.map(fecha => {
+              const dayItems = byDate[fecha];
+              const dayCats = {};
+              dayItems.forEach(d=>dayCats[d.cat]=(dayCats[d.cat]||0)+1);
+              const dayId = id + '-d-' + fecha.replace('/','_');
+              const detail = dayItems.map(row=>
+                `<div style="display:-webkit-flex;display:flex;gap:6px;align-items:baseline;padding:5px 0 5px 12px;border-bottom:1px solid #f4f0eb;font-size:11px">
+                  <span style="flex:1;color:#1a1210;font-weight:500;text-transform:capitalize">${cap(row.insumo)}</span>
+                  <span style="color:#c93605;font-family:'Playfair Display',serif;font-size:13px">${row.cantidad}</span>
+                  <span class="badge ${BC[row.cat]}">${LBL[row.cat]}</span>
+                  <span style="color:#9a8f85;font-size:10px">${row.resp}</span>
+                </div>`).join('');
+              return `
+                <div style="border-bottom:1px solid #e8e0d5">
+                  <div class="goc" onclick="toggleIns('${dayId}',this)" style="cursor:pointer;padding:8px 0">
+                    <span class="goc-name" style="font-weight:600;color:#1a1210">${fecha}</span>
+                    <span class="goc-n">${dayItems.length} reg.</span>
+                    <span style="color:#c0b8ac;margin-left:4px;font-size:12px">›</span>
+                  </div>
+                  <div id="${dayId}" style="display:none">${detail}</div>
+                </div>`;
+            }).join('')}
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
 
 function rCmpView(){
   // group by week
@@ -1789,9 +1976,11 @@ function switchView(v,btn){
   document.getElementById('vR').style.display=v==='r'?'block':'none';
   document.getElementById('vI').style.display=v==='i'?'block':'none';
   document.getElementById('vG').style.display=v==='g'?'block':'none';
+  document.getElementById('vS').style.display=v==='s'?'block':'none';
   document.getElementById('vC').style.display=v==='c'?'block':'none';
   if(v==='i')rInsView(DATA);
   if(v==='g')rGrupoView();
+  if(v==='s')rSemanaView();
   if(v==='c')rCmpView();
 }
 function openProfile(name){
