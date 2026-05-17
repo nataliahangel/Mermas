@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -27,236 +26,236 @@ thead tr { background: #faf7f3 !important; }
 
 /* ── TOPBAR ────────────────────────────────────── */
 .topbar {
-position: sticky;
-top: 0;
-z-index: 200;
-background: #1a1210;
-height: 56px;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-padding: 0 18px;
-gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: #1a1210;
+  height: 56px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 18px;
+  gap: 10px;
 }
 .brand-name {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 20px;
-font-weight: 700;
-color: #ffffff;
-letter-spacing: -0.3px;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  -webkit-font-smoothing: antialiased;
 }
 .brand-sep { color: rgba(255,255,255,0.2); margin: 0 6px; font-size: 14px; }
 .brand-sub {
-font-size: 9px;
-color: rgba(255,255,255,0.4);
-letter-spacing: 0.15em;
-text-transform: uppercase;
+  font-size: 9px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 .topbar-right {
-margin-left: auto;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-gap: 10px;
+  margin-left: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 10px;
 }
 .topbar-date {
-font-size: 10px;
-color: rgba(255,255,255,0.4);
-letter-spacing: 0.04em;
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.04em;
 }
 .topbar-date strong { color: rgba(255,255,255,0.7); font-weight: 500; }
 .menu-btn {
-display: none;
-width: 36px;
-height: 36px;
-border-radius: 6px;
-border: 1px solid rgba(255,255,255,0.2);
-background: rgba(255,255,255,0.08);
-color: rgba(255,255,255,0.7);
-font-size: 16px;
-cursor: pointer;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-appearance: none;
-appearance: none;
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* ── KPI STRIP ─────────────────────────────────── */
 .kpi-strip {
-display: -webkit-flex;
-display: flex;
-background: #c93605;
+  display: -webkit-flex;
+  display: flex;
+  background: #c93605;
 }
 .kpi {
--webkit-flex: 1;
-flex: 1;
-padding: 14px 18px 12px;
-border-right: 1px solid rgba(255,255,255,0.15);
-position: relative;
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 14px 18px 12px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  position: relative;
 }
 .kpi:last-child { border-right: none; }
 .kpi-lbl {
-font-size: 8px;
-color: rgba(255,255,255,0.55);
-text-transform: uppercase;
-letter-spacing: 0.18em;
-margin-bottom: 5px;
-display: block;
+  font-size: 8px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 5px;
+  display: block;
 }
 .kpi-val {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 26px;
-color: #ffffff;
-line-height: 1;
--webkit-font-smoothing: antialiased;
-display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: block;
 }
 .kpi-val.sm { font-size: 15px; padding-top: 4px; line-height: 1.2; }
 .kpi-sub {
-font-size: 9px;
-color: rgba(255,255,255,0.45);
-margin-top: 4px;
-display: block;
+  font-size: 9px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 4px;
+  display: block;
 }
 
 /* ── LAYOUT ────────────────────────────────────── */
 .layout {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: flex-start;
-align-items: flex-start;
-min-height: calc(100vh - 56px - 38px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  min-height: calc(100vh - 56px - 38px);
 }
 .main { -webkit-flex: 1; flex: 1; min-width: 0; }
 .sidebar {
-width: 280px;
--webkit-flex-shrink: 0;
-flex-shrink: 0;
-background: #ffffff;
-border-left: 1px solid #ddd5c8;
--webkit-align-self: stretch;
-align-self: stretch;
-overflow-y: auto;
+  width: 280px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-left: 1px solid #ddd5c8;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  overflow-y: auto;
 }
 
 /* ── VIEW TABS ─────────────────────────────────── */
 .view-tabs {
-display: -webkit-flex;
-display: flex;
-background: #1a1210;
+  display: -webkit-flex;
+  display: flex;
+  background: #1a1210;
 }
 .view-tab {
-padding: 0 20px;
-height: 44px;
-font-family: ‘DM Mono’, monospace;
-font-size: 10px;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: rgba(255,255,255,0.4);
-border: none;
-background: none;
-cursor: pointer;
-border-bottom: 2px solid transparent;
--webkit-appearance: none;
-appearance: none;
-white-space: nowrap;
--webkit-font-smoothing: antialiased;
+  padding: 0 20px;
+  height: 44px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 }
 .view-tab.active {
-color: #ffffff;
-border-bottom-color: #e8530a;
-font-weight: 500;
+  color: #ffffff;
+  border-bottom-color: #e8530a;
+  font-weight: 500;
 }
 
 /* ── TOOLBAR ───────────────────────────────────── */
 .toolbar {
-position: sticky;
-top: 56px;
-z-index: 90;
-padding: 10px 14px;
-background: #faf7f3;
-border-bottom: 1px solid #ddd5c8;
-display: -webkit-flex;
-display: flex;
-gap: 8px;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
--webkit-align-items: center;
-align-items: center;
+  position: sticky;
+  top: 56px;
+  z-index: 90;
+  padding: 10px 14px;
+  background: #faf7f3;
+  border-bottom: 1px solid #ddd5c8;
+  display: -webkit-flex;
+  display: flex;
+  gap: 8px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .t-search {
-display: -webkit-flex;
-display: flex;
-gap: 6px;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
--webkit-align-items: center;
-align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  gap: 6px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .t-in, .t-sel {
-background: #ffffff;
-border: 1.5px solid #ddd5c8;
-border-radius: 6px;
-padding: 6px 10px;
-font-family: ‘DM Mono’, monospace;
-font-size: 13px;
-color: #1a1210;
-outline: none;
-height: 34px;
--webkit-appearance: none;
-appearance: none;
+  background: #ffffff;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #1a1210;
+  outline: none;
+  height: 34px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .t-in { min-width: 110px; max-width: 170px; }
 .t-in::-webkit-input-placeholder { color: #9a8f85; }
 .t-in:focus, .t-sel:focus { border-color: #c93605; }
 .t-clr {
-background: none;
-border: 1.5px solid #ddd5c8;
-border-radius: 6px;
-padding: 0 10px;
-height: 34px;
-font-family: ‘DM Mono’, monospace;
-font-size: 13px;
-color: #9a8f85;
-cursor: pointer;
-white-space: nowrap;
--webkit-appearance: none;
-appearance: none;
+  background: none;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 6px;
+  padding: 0 10px;
+  height: 34px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #9a8f85;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .t-sep { width: 1px; background: #ddd5c8; height: 22px; -webkit-align-self: center; align-self: center; }
 .chips {
-display: -webkit-flex;
-display: flex;
-gap: 5px;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  gap: 5px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .chip {
-padding: 0 12px;
-height: 28px;
-border-radius: 14px;
-border: 1.5px solid #ddd5c8;
-background: #ffffff;
-font-family: ‘DM Mono’, monospace;
-font-size: 10px;
-letter-spacing: 0.04em;
-color: #9a8f85;
-cursor: pointer;
-white-space: nowrap;
--webkit-appearance: none;
-appearance: none;
--webkit-font-smoothing: antialiased;
+  padding: 0 12px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1.5px solid #ddd5c8;
+  background: #ffffff;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #9a8f85;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
 }
 .chip.active {
-background: #1a1210;
-border-color: #1a1210;
-color: #ffffff;
-font-weight: 500;
+  background: #1a1210;
+  border-color: #1a1210;
+  color: #ffffff;
+  font-weight: 500;
 }
 .t-count { font-size: 10px; color: #9a8f85; white-space: nowrap; margin-left: auto; }
 
@@ -265,64 +264,64 @@ font-weight: 500;
 table { width: 100%; border-collapse: collapse; }
 thead tr { background: #faf7f3; border-bottom: 2px solid #ddd5c8; }
 th {
-padding: 9px 14px;
-text-align: left;
-font-size: 9px;
-color: #9a8f85;
-letter-spacing: 0.16em;
-text-transform: uppercase;
-font-weight: 500;
-white-space: nowrap;
+  padding: 9px 14px;
+  text-align: left;
+  font-size: 9px;
+  color: #9a8f85;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
 }
 tbody tr { border-bottom: 1px solid #e8e0d5; }
 td { padding: 10px 14px; font-size: 12px; vertical-align: middle; }
 
 .tc-fecha {
-font-size: 10px;
-color: #9a8f85;
-white-space: nowrap;
-font-weight: 500;
-letter-spacing: 0.04em;
+  font-size: 10px;
+  color: #9a8f85;
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 .tc-insumo { font-weight: 500; color: #1a1210; }
 .tc-cant {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 15px;
-color: #c93605;
-white-space: nowrap;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  color: #c93605;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 }
 .tc-resp { white-space: nowrap; }
 .resp-pill {
-display: inline-block;
-background: #1a1210;
-color: #ffffff;
-border-radius: 12px;
-padding: 2px 10px;
-font-size: 10px;
-letter-spacing: 0.03em;
--webkit-font-smoothing: antialiased;
+  display: inline-block;
+  background: #1a1210;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
 }
 .causa-cell {
-display: -webkit-flex;
-display: flex;
--webkit-flex-direction: column;
-flex-direction: column;
-gap: 4px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
 }
 .nota-t { font-size: 10px; color: #9a8f85; }
 
 /* ── BADGES ────────────────────────────────────── */
 .badge {
-display: inline-block;
-padding: 3px 8px;
-border-radius: 4px;
-font-size: 9px;
-font-weight: 700;
-letter-spacing: 0.07em;
-text-transform: uppercase;
-white-space: nowrap;
--webkit-font-smoothing: antialiased;
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 }
 .b-mal-estado { color: #a01c06; background: #fde8e3; border: 1.5px solid #f0a090; }
 .b-quemado    { color: #7a4e00; background: #fff3cc; border: 1.5px solid #edc840; }
@@ -335,83 +334,83 @@ white-space: nowrap;
 
 /* ── INSUMOS VIEW ──────────────────────────────── */
 .i-toolbar {
-padding: 10px 14px;
-background: #faf7f3;
-border-bottom: 1px solid #ddd5c8;
-display: -webkit-flex;
-display: flex;
-gap: 10px;
--webkit-align-items: center;
-align-items: center;
+  padding: 10px 14px;
+  background: #faf7f3;
+  border-bottom: 1px solid #ddd5c8;
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .i-toolbar input {
-background: #ffffff;
-border: 1.5px solid #ddd5c8;
-border-radius: 6px;
-padding: 6px 10px;
-font-family: ‘DM Mono’, monospace;
-font-size: 12px;
-color: #1a1210;
-outline: none;
-height: 34px;
-width: 220px;
--webkit-appearance: none;
-appearance: none;
+  background: #ffffff;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: #1a1210;
+  outline: none;
+  height: 34px;
+  width: 220px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .i-toolbar input::-webkit-input-placeholder { color: #9a8f85; }
 .i-toolbar input:focus { border-color: #c93605; }
 .i-count { font-size: 10px; color: #9a8f85; }
 
 .i-grid {
-padding: 14px;
-display: -webkit-flex;
-display: flex;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
-gap: 12px;
+  padding: 14px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 .icard {
-background: #ffffff;
-border: 1.5px solid #ddd5c8;
-border-radius: 10px;
-overflow: hidden;
-width: calc(50% - 6px);
-min-width: 240px;
--webkit-flex: 1;
-flex: 1;
+  background: #ffffff;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(50% - 6px);
+  min-width: 240px;
+  -webkit-flex: 1;
+  flex: 1;
 }
 .icard-head {
-padding: 12px 14px 10px;
-border-bottom: 1px solid #e8e0d5;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: space-between;
-justify-content: space-between;
--webkit-align-items: flex-start;
-align-items: flex-start;
-gap: 8px;
-background: #fdfcfa;
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid #e8e0d5;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  background: #fdfcfa;
 }
 .icard-name { font-weight: 500; font-size: 13px; text-transform: capitalize; line-height: 1.3; }
 .icard-right { text-align: right; -webkit-flex-shrink: 0; flex-shrink: 0; }
 .icard-qty {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 17px;
-color: #c93605;
-line-height: 1;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  color: #c93605;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 .icard-regs { font-size: 9px; color: #9a8f85; letter-spacing: 0.06em; margin-top: 2px; }
 .icard-body { padding: 7px 14px 11px; }
 .ioc {
-display: -webkit-flex;
-display: flex;
-gap: 6px;
--webkit-align-items: baseline;
-align-items: baseline;
-padding: 4px 0;
-border-bottom: 1px solid #e8e0d5;
-font-size: 11px;
+  display: -webkit-flex;
+  display: flex;
+  gap: 6px;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  padding: 4px 0;
+  border-bottom: 1px solid #e8e0d5;
+  font-size: 11px;
 }
 .ioc:last-child { border-bottom: none; }
 .ioc-f { color: #9a8f85; font-size: 10px; font-weight: 500; width: 36px; -webkit-flex-shrink: 0; flex-shrink: 0; }
@@ -420,20 +419,20 @@ font-size: 11px;
 /* ── SIDEBAR ───────────────────────────────────── */
 .ss { padding: 15px 16px; border-bottom: 1px solid #ddd5c8; }
 .ss h3 {
-font-size: 9px;
-color: #9a8f85;
-text-transform: uppercase;
-letter-spacing: 0.18em;
-margin-bottom: 12px;
-font-weight: 500;
+  font-size: 9px;
+  color: #9a8f85;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 .bar-row {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-gap: 8px;
-margin-bottom: 7px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
 }
 .bar-lbl { width: 95px; font-size: 11px; color: #3d3028; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; -webkit-flex-shrink: 0; flex-shrink: 0; text-transform: capitalize; }
 .bar-track { -webkit-flex: 1; flex: 1; height: 5px; background: #f0ebe4; border-radius: 3px; overflow: hidden; }
@@ -441,23 +440,23 @@ margin-bottom: 7px;
 .bar-n { font-size: 10px; color: #9a8f85; width: 22px; text-align: right; -webkit-flex-shrink: 0; flex-shrink: 0; }
 
 .causa-grid {
-display: -webkit-flex;
-display: flex;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
-gap: 6px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .ci {
-border-radius: 6px;
-padding: 9px 10px;
-border: 1.5px solid;
-width: calc(50% - 3px);
--webkit-flex-shrink: 0;
-flex-shrink: 0;
-transition: opacity 0.15s, transform 0.1s;
+  border-radius: 6px;
+  padding: 9px 10px;
+  border: 1.5px solid;
+  width: calc(50% - 3px);
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  transition: opacity 0.15s, transform 0.1s;
 }
 .ci:hover { opacity: 0.85; transform: scale(0.97); }
-.ci .cn { font-family: ‘Playfair Display’, Georgia, serif; font-size: 20px; line-height: 1; -webkit-font-smoothing: antialiased; }
+.ci .cn { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; line-height: 1; -webkit-font-smoothing: antialiased; }
 .ci .cl { font-size: 8px; text-transform: uppercase; letter-spacing: 0.09em; margin-top: 3px; line-height: 1.3; opacity: 0.8; }
 .ci-red    { background: #fde8e3; border-color: #f0a090; } .ci-red .cn, .ci-red .cl    { color: #a01c06; }
 .ci-yellow { background: #fff3cc; border-color: #edc840; } .ci-yellow .cn, .ci-yellow .cl { color: #7a4e00; }
@@ -469,160 +468,160 @@ transition: opacity 0.15s, transform 0.1s;
 .ci-gray   { background: #eeebe5; border-color: #c0b8ac; } .ci-gray .cn, .ci-gray .cl   { color: #4a4038; }
 
 .resp-row {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: space-between;
-justify-content: space-between;
-padding: 7px 0;
-border-bottom: 1px solid #e8e0d5;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #e8e0d5;
 }
 .resp-row:last-child { border-bottom: none; }
 .resp-name { font-size: 12px; color: #3d3028; }
 .resp-n {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 16px;
-color: #c93605;
-background: rgba(201,54,5,0.07);
-border-radius: 5px;
-padding: 0 8px;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  color: #c93605;
+  background: rgba(201,54,5,0.07);
+  border-radius: 5px;
+  padding: 0 8px;
+  -webkit-font-smoothing: antialiased;
 }
 .nota-card {
-background: #fdf8f5;
-border-left: 3px solid #c93605;
-border-radius: 0 5px 5px 0;
-padding: 9px 12px;
-margin-bottom: 8px;
-font-size: 11px;
-line-height: 1.65;
-color: #3d3028;
+  background: #fdf8f5;
+  border-left: 3px solid #c93605;
+  border-radius: 0 5px 5px 0;
+  padding: 9px 12px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  line-height: 1.65;
+  color: #3d3028;
 }
 .nota-card:last-child { margin-bottom: 0; }
 .nota-card strong {
-color: #c93605;
-display: block;
-margin-bottom: 4px;
-font-size: 9px;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+  color: #c93605;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 /* ── PROFILE MODAL ──────────────────────────────── */
 .modal-overlay {
-display: none;
-position: fixed;
-top: 0; left: 0; right: 0; bottom: 0;
-background: rgba(26,18,16,0.6);
-z-index: 500;
--webkit-backdrop-filter: blur(2px);
-backdrop-filter: blur(2px);
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(26,18,16,0.6);
+  z-index: 500;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 .modal-overlay.open { display: block; }
 .modal {
-position: fixed;
-top: 0; right: 0; bottom: 0;
-width: 100%;
-max-width: 480px;
-background: #ffffff;
-z-index: 501;
-display: -webkit-flex;
-display: flex;
--webkit-flex-direction: column;
-flex-direction: column;
-overflow: hidden;
-transform: translateX(100%);
--webkit-transform: translateX(100%);
-transition: transform 0.28s ease;
--webkit-transition: -webkit-transform 0.28s ease;
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  z-index: 501;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform 0.28s ease;
+  -webkit-transition: -webkit-transform 0.28s ease;
 }
 .modal.open {
-transform: translateX(0);
--webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
 .modal-header {
-background: #1a1210;
-padding: 18px 20px 16px;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: flex-start;
-align-items: flex-start;
-gap: 14px;
+  background: #1a1210;
+  padding: 18px 20px 16px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  gap: 14px;
 }
 .modal-avatar {
-width: 44px;
-height: 44px;
-border-radius: 50%;
-background: #c93605;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: center;
-justify-content: center;
-font-family: ‘Playfair Display’, serif;
-font-size: 18px;
-color: #ffffff;
--webkit-flex-shrink: 0;
-flex-shrink: 0;
--webkit-font-smoothing: antialiased;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #c93605;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-font-smoothing: antialiased;
 }
 .modal-header-info { -webkit-flex: 1; flex: 1; }
 .modal-name {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 18px;
-font-weight: 700;
-color: #ffffff;
--webkit-font-smoothing: antialiased;
-line-height: 1.2;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.2;
 }
 .modal-meta { font-size: 10px; color: rgba(255,255,255,0.45); margin-top: 4px; letter-spacing: 0.05em; }
 .modal-close {
-background: rgba(255,255,255,0.1);
-border: 1px solid rgba(255,255,255,0.2);
-border-radius: 6px;
-width: 32px;
-height: 32px;
-color: rgba(255,255,255,0.7);
-font-size: 16px;
-cursor: pointer;
--webkit-appearance: none;
-appearance: none;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-flex-shrink: 0;
-flex-shrink: 0;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .modal-body { -webkit-flex: 1; flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .modal-section { padding: 16px 18px; border-bottom: 1px solid #e8e0d5; }
 .modal-section h4 {
-font-size: 9px;
-color: #9a8f85;
-text-transform: uppercase;
-letter-spacing: 0.18em;
-margin-bottom: 12px;
-font-weight: 500;
+  font-size: 9px;
+  color: #9a8f85;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 .p-stats {
-display: -webkit-flex;
-display: flex;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
-gap: 6px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .p-stat {
-border-radius: 6px;
-padding: 8px 10px;
-border: 1.5px solid;
-min-width: 80px;
--webkit-flex: 1;
-flex: 1;
+  border-radius: 6px;
+  padding: 8px 10px;
+  border: 1.5px solid;
+  min-width: 80px;
+  -webkit-flex: 1;
+  flex: 1;
 }
-.p-stat .ps-n { font-family: ‘Playfair Display’, Georgia, serif; font-size: 20px; line-height: 1; -webkit-font-smoothing: antialiased; }
+.p-stat .ps-n { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; line-height: 1; -webkit-font-smoothing: antialiased; }
 .p-stat .ps-l { font-size: 8px; text-transform: uppercase; letter-spacing: 0.09em; margin-top: 3px; line-height: 1.3; opacity: 0.8; }
 .p-stat.ci-red    { background: #fde8e3; border-color: #f0a090; } .p-stat.ci-red .ps-n, .p-stat.ci-red .ps-l { color: #a01c06; }
 .p-stat.ci-yellow { background: #fff3cc; border-color: #edc840; } .p-stat.ci-yellow .ps-n, .p-stat.ci-yellow .ps-l { color: #7a4e00; }
@@ -635,127 +634,127 @@ flex: 1;
 .p-day { margin-bottom: 14px; }
 .p-day:last-child { margin-bottom: 0; }
 .p-day-label {
-font-size: 10px;
-font-weight: 500;
-color: #9a8f85;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-margin-bottom: 6px;
-padding-bottom: 4px;
-border-bottom: 1px solid #e8e0d5;
+  font-size: 10px;
+  font-weight: 500;
+  color: #9a8f85;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e8e0d5;
 }
 .p-row {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: baseline;
-align-items: baseline;
-gap: 8px;
-padding: 5px 0;
-border-bottom: 1px solid #f0ebe4;
-font-size: 12px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0ebe4;
+  font-size: 12px;
 }
 .p-row:last-child { border-bottom: none; }
 .p-row-name { -webkit-flex: 1; flex: 1; font-weight: 500; color: #1a1210; }
-.p-row-qty { color: #c93605; font-family: ‘Playfair Display’, Georgia, serif; font-size: 13px; white-space: nowrap; }
+.p-row-qty { color: #c93605; font-family: 'Playfair Display', Georgia, serif; font-size: 13px; white-space: nowrap; }
 .p-row-badge { -webkit-flex-shrink: 0; flex-shrink: 0; }
 
 .resp-btn {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: space-between;
-justify-content: space-between;
-width: 100%;
-padding: 8px 0;
-border: none;
-background: none;
-cursor: pointer;
-border-bottom: 1px solid #e8e0d5;
--webkit-appearance: none;
-appearance: none;
-text-align: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 1px solid #e8e0d5;
+  -webkit-appearance: none;
+  appearance: none;
+  text-align: left;
 }
 .resp-btn:last-child { border-bottom: none; }
 .resp-btn:active { background: rgba(201,54,5,0.04); }
-.resp-btn-name { font-size: 12px; color: #3d3028; font-family: ‘DM Mono’, monospace; }
+.resp-btn-name { font-size: 12px; color: #3d3028; font-family: 'DM Mono', monospace; }
 .resp-btn-right {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-gap: 8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 8px;
 }
 .resp-btn-n {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 16px;
-color: #c93605;
-background: rgba(201,54,5,0.07);
-border-radius: 5px;
-padding: 0 8px;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  color: #c93605;
+  background: rgba(201,54,5,0.07);
+  border-radius: 5px;
+  padding: 0 8px;
+  -webkit-font-smoothing: antialiased;
 }
 .resp-btn-arrow { font-size: 12px; color: #c0b8ac; }
 
 /* ── FOOTER ────────────────────────────────────── */
 footer {
-background: #1a1210;
-border-top: 1px solid #2e2420;
-padding: 10px 18px;
-font-size: 10px;
-color: rgba(255,255,255,0.3);
-letter-spacing: 0.06em;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: space-between;
-justify-content: space-between;
+  background: #1a1210;
+  border-top: 1px solid #2e2420;
+  padding: 10px 18px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.06em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* ── GRUPO VIEW ─────────────────────────────────── */
 .gcard {
-background: #ffffff;
-border: 1.5px solid #ddd5c8;
-border-radius: 10px;
-overflow: hidden;
-width: calc(50% - 6px);
-min-width: 240px;
--webkit-flex: 1;
-flex: 1;
+  background: #ffffff;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(50% - 6px);
+  min-width: 240px;
+  -webkit-flex: 1;
+  flex: 1;
 }
 .gcard-head {
-padding: 12px 14px 10px;
-border-bottom: 1px solid #e8e0d5;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: space-between;
-justify-content: space-between;
--webkit-align-items: center;
-align-items: center;
-gap: 10px;
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid #e8e0d5;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 10px;
 }
 .gcard-left { display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:10px;-webkit-flex:1;flex:1; }
 .gcard-icon { font-size: 22px; line-height: 1; }
 .gcard-title { font-weight: 500; font-size: 13px; color: #1a1210; }
 .gcard-sub { font-size: 9px; color: #9a8f85; margin-top: 2px; letter-spacing: 0.06em; }
 .gcard-total {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 22px;
-color: #c93605;
-line-height: 1;
--webkit-font-smoothing: antialiased;
--webkit-flex-shrink: 0;
-flex-shrink: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  color: #c93605;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .gcard-body { padding: 7px 14px 11px; }
 .goc {
-display: -webkit-flex;
-display: flex;
-gap: 6px;
--webkit-align-items: baseline;
-align-items: baseline;
-padding: 4px 0;
-border-bottom: 1px solid #e8e0d5;
-font-size: 11px;
+  display: -webkit-flex;
+  display: flex;
+  gap: 6px;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  padding: 4px 0;
+  border-bottom: 1px solid #e8e0d5;
+  font-size: 11px;
 }
 .goc:last-child { border-bottom: none; }
 .goc-name { -webkit-flex: 1; flex: 1; color: #3d3028; text-transform: capitalize; }
@@ -764,57 +763,57 @@ font-size: 11px;
 
 /* ── COMPARATIVA VIEW ──────────────────────────── */
 .cmp-section {
-background: #ffffff;
-border: 1.5px solid #ddd5c8;
-border-radius: 10px;
-padding: 16px 18px;
-margin-bottom: 12px;
+  background: #ffffff;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
 }
 .cmp-h {
-font-size: 10px;
-color: #9a8f85;
-text-transform: uppercase;
-letter-spacing: 0.18em;
-margin-bottom: 14px;
-font-weight: 500;
+  font-size: 10px;
+  color: #9a8f85;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+  font-weight: 500;
 }
 .cmp-weeks {
-display: -webkit-flex;
-display: flex;
-gap: 10px;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  gap: 10px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .cmp-week {
--webkit-flex: 1;
-flex: 1;
-min-width: 140px;
-background: #faf7f3;
-border: 1.5px solid #ddd5c8;
-border-radius: 8px;
-padding: 12px 14px;
-position: relative;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 140px;
+  background: #faf7f3;
+  border: 1.5px solid #ddd5c8;
+  border-radius: 8px;
+  padding: 12px 14px;
+  position: relative;
 }
 .cmp-week.current { background: #fff0eb; border-color: #c93605; }
 .cmp-week-label { font-size: 9px; color: #9a8f85; text-transform: uppercase; letter-spacing: 0.14em; }
 .cmp-week-range { font-size: 10px; color: #3d3028; margin-top: 2px; font-weight: 500; }
 .cmp-week-total {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 28px;
-color: #c93605;
-line-height: 1;
-margin-top: 8px;
--webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  color: #c93605;
+  line-height: 1;
+  margin-top: 8px;
+  -webkit-font-smoothing: antialiased;
 }
 .cmp-week-sub { font-size: 10px; color: #9a8f85; margin-top: 3px; }
 .cmp-delta {
-display: inline-block;
-font-size: 10px;
-font-weight: 600;
-letter-spacing: 0.04em;
-padding: 2px 7px;
-border-radius: 3px;
-margin-top: 6px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-top: 6px;
 }
 .cmp-delta.up { color: #a01c06; background: #fde8e3; }
 .cmp-delta.down { color: #0a5528; background: #dff2e6; }
@@ -822,36 +821,36 @@ margin-top: 6px;
 
 .cmp-bars { margin-top: 4px; }
 .cmp-bar-row {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-gap: 10px;
-margin-bottom: 8px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 .cmp-bar-lbl {
-width: 110px;
-font-size: 11px;
-color: #3d3028;
-text-transform: capitalize;
--webkit-flex-shrink: 0;
-flex-shrink: 0;
+  width: 110px;
+  font-size: 11px;
+  color: #3d3028;
+  text-transform: capitalize;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .cmp-bars-stack {
--webkit-flex: 1;
-flex: 1;
-display: -webkit-flex;
-display: flex;
--webkit-flex-direction: column;
-flex-direction: column;
-gap: 3px;
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  gap: 3px;
 }
 .cmp-bar-line {
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
-gap: 6px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 6px;
 }
 .cmp-bar-wlbl { font-size: 9px; color: #9a8f85; width: 38px; -webkit-flex-shrink: 0; flex-shrink: 0; letter-spacing: 0.04em; }
 .cmp-bar-track { -webkit-flex: 1; flex: 1; height: 6px; background: #f0ebe4; border-radius: 3px; overflow: hidden; }
@@ -859,166 +858,159 @@ gap: 6px;
 .cmp-bar-n { font-size: 10px; color: #3d3028; width: 26px; text-align: right; -webkit-flex-shrink: 0; flex-shrink: 0; font-weight: 500; }
 
 .cmp-insights {
-background: #fdf8f5;
-border-left: 3px solid #c93605;
-border-radius: 0 6px 6px 0;
-padding: 12px 14px;
-margin-top: 12px;
+  background: #fdf8f5;
+  border-left: 3px solid #c93605;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px;
+  margin-top: 12px;
 }
 .cmp-insight {
-font-size: 11px;
-line-height: 1.6;
-color: #3d3028;
-padding: 4px 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #3d3028;
+  padding: 4px 0;
 }
 .cmp-insight strong { color: #c93605; font-weight: 600; }
 
 /* ── RESPONSIVE ────────────────────────────────── */
 @media (max-width: 860px) {
-.sidebar { width: 250px; }
+  .sidebar { width: 250px; }
 }
 @media (max-width: 700px) {
-.brand-sub, .brand-sep { display: none; }
-.topbar-date { display: none; }
-.menu-btn { display: -webkit-flex; display: flex; }
-.kpi-strip { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-.kpi { width: 50%; -webkit-flex: none; flex: none; }
-.kpi:nth-child(2) { border-right: none; }
-.kpi:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.15); }
-.kpi:nth-child(4) { border-right: none; border-top: 1px solid rgba(255,255,255,0.15); }
-.layout { -webkit-flex-direction: column; flex-direction: column; }
-.sidebar { width: 100%; border-left: none; border-top: 1px solid #ddd5c8; display: none; }
-.sidebar.open { display: block; }
-.t-in { max-width: none; -webkit-flex: 1; flex: 1; }
-.t-sep { display: none; }
-.chips { width: 100%; overflow-x: auto; -webkit-flex-wrap: nowrap; flex-wrap: nowrap; padding-bottom: 2px; -webkit-overflow-scrolling: touch; }
-.t-count { display: none; }
-.tc-resp { display: none; }
-.i-grid { -webkit-flex-direction: column; flex-direction: column; }
-.icard { width: 100%; }
-.gcard { width: 100%; }
+  .brand-sub, .brand-sep { display: none; }
+  .topbar-date { display: none; }
+  .menu-btn { display: -webkit-flex; display: flex; }
+  .kpi-strip { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+  .kpi { width: 50%; -webkit-flex: none; flex: none; }
+  .kpi:nth-child(2) { border-right: none; }
+  .kpi:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.15); }
+  .kpi:nth-child(4) { border-right: none; border-top: 1px solid rgba(255,255,255,0.15); }
+  .layout { -webkit-flex-direction: column; flex-direction: column; }
+  .sidebar { width: 100%; border-left: none; border-top: 1px solid #ddd5c8; display: none; }
+  .sidebar.open { display: block; }
+  .t-in { max-width: none; -webkit-flex: 1; flex: 1; }
+  .t-sep { display: none; }
+  .chips { width: 100%; overflow-x: auto; -webkit-flex-wrap: nowrap; flex-wrap: nowrap; padding-bottom: 2px; -webkit-overflow-scrolling: touch; }
+  .t-count { display: none; }
+  .tc-resp { display: none; }
+  .i-grid { -webkit-flex-direction: column; flex-direction: column; }
+  .icard { width: 100%; }
+  .gcard { width: 100%; }
 }
 @media (max-width: 440px) {
-.kpi { padding: 12px 14px; }
-.kpi-val { font-size: 22px; }
-.brand-name { font-size: 17px; }
-.ioc { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-.ioc-f { display: none; }
-th:last-child, td:last-child { display: none; }
+  .kpi { padding: 12px 14px; }
+  .kpi-val { font-size: 22px; }
+  .brand-name { font-size: 17px; }
+  .ioc { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+  .ioc-f { display: none; }
+  th:last-child, td:last-child { display: none; }
 }
 </style>
-
 </head>
 <body>
 
 <!-- TOPBAR -->
-
 <header class="topbar">
   <span class="brand-name">Chuí</span>
   <span class="brand-sep">|</span>
   <span class="brand-sub">Control de Mermas</span>
   <div class="topbar-right">
-    <span class="topbar-date"><strong>8 abril — 13 mayo 2026</strong></span>
+    <span class="topbar-date"><strong>8 abril — 17 mayo 2026</strong></span>
     <button class="menu-btn" onclick="toggleSidebar()">☰</button>
   </div>
 </header>
 
 <!-- KPIs -->
-
 <div class="kpi-strip" id="kpiStrip"></div>
 
 <!-- LAYOUT -->
-
 <div class="layout">
   <div class="main">
 
-```
-<!-- TABS -->
-<div class="view-tabs">
-  <button class="view-tab active" onclick="switchView('r',this)">Registros</button>
-  <button class="view-tab" onclick="switchView('i',this)">Por insumo</button>
-  <button class="view-tab" onclick="switchView('g',this)">Por grupo</button>
-  <button class="view-tab" onclick="switchView('s',this)">Por semana</button>
-  <button class="view-tab" onclick="switchView('c',this)">Comparativa</button>
-</div>
-
-<!-- VISTA REGISTROS -->
-<div id="vR">
-  <div class="toolbar">
-    <div class="t-search">
-      <select class="t-sel" id="sIns" onchange="applySearch()">
-        <option value="">Todos los insumos</option>
-      </select>
-      <select class="t-sel" id="sPer" onchange="applySearch()">
-        <option value="">Todas las personas</option>
-      </select>
-      <select class="t-sel" id="sMot" onchange="applySearch()">
-        <option value="">Todos los motivos</option>
-        <option value="mal-estado">Mal estado</option>
-        <option value="quemado">Quemado / cocción</option>
-        <option value="roto">Roto</option>
-        <option value="fecha">Vencido</option>
-        <option value="perso">Perso</option>
-        <option value="prueba">Prueba</option>
-        <option value="limpieza">Limpieza cámara</option>
-        <option value="otro">Otro</option>
-      </select>
-      <button class="t-clr" onclick="clearSearch()">✕ Limpiar</button>
+    <!-- TABS -->
+    <div class="view-tabs">
+      <button class="view-tab active" onclick="switchView('r',this)">Registros</button>
+      <button class="view-tab" onclick="switchView('i',this)">Por insumo</button>
+      <button class="view-tab" onclick="switchView('g',this)">Por grupo</button>
+      <button class="view-tab" onclick="switchView('s',this)">Por semana</button>
+      <button class="view-tab" onclick="switchView('c',this)">Comparativa</button>
     </div>
-    <div class="t-sep"></div>
-    <div class="chips">
-      <button class="chip active" onclick="fAll(this)">Todos</button>
-      <button class="chip" onclick="fCat(this,'mal-estado')">Mal estado</button>
-      <button class="chip" onclick="fCat(this,'quemado')">Quemado</button>
-      <button class="chip" onclick="fCat(this,'roto')">Roto</button>
-      <button class="chip" onclick="fCat(this,'fecha')">Vencido</button>
-      <button class="chip" onclick="fCat(this,'perso')">Perso</button>
-      <button class="chip" onclick="fCat(this,'prueba')">Prueba</button>
-      <button class="chip" onclick="fCat(this,'limpieza')">Limpieza</button>
+
+    <!-- VISTA REGISTROS -->
+    <div id="vR">
+      <div class="toolbar">
+        <div class="t-search">
+          <select class="t-sel" id="sIns" onchange="applySearch()">
+            <option value="">Todos los insumos</option>
+          </select>
+          <select class="t-sel" id="sPer" onchange="applySearch()">
+            <option value="">Todas las personas</option>
+          </select>
+          <select class="t-sel" id="sMot" onchange="applySearch()">
+            <option value="">Todos los motivos</option>
+            <option value="mal-estado">Mal estado</option>
+            <option value="quemado">Quemado / cocción</option>
+            <option value="roto">Roto</option>
+            <option value="fecha">Vencido</option>
+            <option value="perso">Perso</option>
+            <option value="prueba">Prueba</option>
+            <option value="limpieza">Limpieza cámara</option>
+            <option value="otro">Otro</option>
+          </select>
+          <button class="t-clr" onclick="clearSearch()">✕ Limpiar</button>
+        </div>
+        <div class="t-sep"></div>
+        <div class="chips">
+          <button class="chip active" onclick="fAll(this)">Todos</button>
+          <button class="chip" onclick="fCat(this,'mal-estado')">Mal estado</button>
+          <button class="chip" onclick="fCat(this,'quemado')">Quemado</button>
+          <button class="chip" onclick="fCat(this,'roto')">Roto</button>
+          <button class="chip" onclick="fCat(this,'fecha')">Vencido</button>
+          <button class="chip" onclick="fCat(this,'perso')">Perso</button>
+          <button class="chip" onclick="fCat(this,'prueba')">Prueba</button>
+          <button class="chip" onclick="fCat(this,'limpieza')">Limpieza</button>
+        </div>
+        <span class="t-count" id="tCount"></span>
+      </div>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th><th>Insumo</th><th>Cantidad</th><th>Motivo</th><th>Responsable</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
     </div>
-    <span class="t-count" id="tCount"></span>
-  </div>
-  <div class="tw">
-    <table>
-      <thead>
-        <tr>
-          <th>Fecha</th><th>Insumo</th><th>Cantidad</th><th>Motivo</th><th>Responsable</th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
-  </div>
-</div>
 
-<!-- VISTA INSUMOS -->
-<div id="vI" style="display:none">
-  <div class="i-toolbar">
-    <input type="text" id="iSearch" placeholder="Buscar insumo..." oninput="filterI(this.value)">
-    <span class="i-count" id="iCount"></span>
-  </div>
-  <div class="i-grid" id="iGrid"></div>
-</div>
+    <!-- VISTA INSUMOS -->
+    <div id="vI" style="display:none">
+      <div class="i-toolbar">
+        <input type="text" id="iSearch" placeholder="Buscar insumo..." oninput="filterI(this.value)">
+        <span class="i-count" id="iCount"></span>
+      </div>
+      <div class="i-grid" id="iGrid"></div>
+    </div>
 
-<!-- VISTA POR GRUPO -->
-<div id="vG" style="display:none">
-  <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:10px" id="gGrid"></div>
-</div>
+    <!-- VISTA POR GRUPO -->
+    <div id="vG" style="display:none">
+      <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:10px" id="gGrid"></div>
+    </div>
 
-<!-- VISTA POR SEMANA -->
-<div id="vS" style="display:none">
-  <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:12px" id="sGrid"></div>
-</div>
+    <!-- VISTA POR SEMANA -->
+    <div id="vS" style="display:none">
+      <div style="padding:14px;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:12px" id="sGrid"></div>
+    </div>
 
-<!-- VISTA COMPARATIVA -->
-<div id="vC" style="display:none">
-  <div id="cWrap" style="padding:16px"></div>
-</div>
-```
+    <!-- VISTA COMPARATIVA -->
+    <div id="vC" style="display:none">
+      <div id="cWrap" style="padding:16px"></div>
+    </div>
 
   </div><!-- /main -->
 
   <!-- SIDEBAR -->
-
   <aside class="sidebar" id="sidebar">
     <div class="ss"><h3>Top insumos</h3><div id="topI"></div></div>
     <div class="ss"><h3>Por motivo</h3><div class="causa-grid" id="causaG"></div></div>
@@ -1033,7 +1025,6 @@ th:last-child, td:last-child { display: none; }
 </div>
 
 <!-- PROFILE MODAL -->
-
 <div class="modal-overlay" id="modalOverlay" onclick="closeProfile()"></div>
 <div class="modal" id="profileModal">
   <div class="modal-header">
@@ -1700,6 +1691,119 @@ const DATA=[
   {fecha:'13/05',insumo:'Azúcar',cantidad:'500 g',cat:'perso',nota:'Perso',resp:'Nicolas Panadero'},
   {fecha:'13/05',insumo:'Panchitos',cantidad:'30 u',cat:'perso',nota:'Sobraron del evento',resp:'Nicolas Panadero'},
   {fecha:'13/05',insumo:'Focaccia',cantidad:'3 porciones',cat:'perso',nota:'Perso',resp:'Nicolas Panadero'},
+
+  // 13/05 — Mel
+  {fecha:'13/05',insumo:'Pastelera de mango',cantidad:'750 g',cat:'otro',nota:'—',resp:'Mel'},
+  {fecha:'13/05',insumo:'Jalea de mango',cantidad:'180 g',cat:'otro',nota:'—',resp:'Mel'},
+  {fecha:'13/05',insumo:'Láminas de mango',cantidad:'110 g',cat:'otro',nota:'—',resp:'Mel'},
+
+  // 13/05 — Celeste
+  {fecha:'13/05',insumo:'Queso llanero recortes',cantidad:'600 g',cat:'mal-estado',nota:'Baboso',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Ajo pelado',cantidad:'565 g',cat:'otro',nota:'Se cayó al piso',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Mayo de hongos',cantidad:'400 g',cat:'fecha',nota:'Del evento, fecha 8/05',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Salsa verde',cantidad:'714 g',cat:'fecha',nota:'Del 8/05, mal color y sabor',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Pesto pallares',cantidad:'157 g',cat:'fecha',nota:'Del 5/05',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Pallares',cantidad:'1 plato',cat:'prueba',nota:'Foto',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Choclo quemado',cantidad:'1 plato',cat:'prueba',nota:'Foto',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Panacota',cantidad:'1 u',cat:'prueba',nota:'Foto',resp:'Celeste Falcon'},
+  {fecha:'13/05',insumo:'Semifredo',cantidad:'1 u',cat:'prueba',nota:'Foto',resp:'Celeste Falcon'},
+
+  // 13/05 — Ale
+  {fecha:'13/05',insumo:'Queso llanero',cantidad:'480 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Verdeo',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Chips boniato',cantidad:'30 g',cat:'quemado',nota:'Quemado',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Bollo de pizza',cantidad:'3 u',cat:'quemado',nota:'Quemado por frío',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Pizza margha',cantidad:'230 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Parmesano',cantidad:'10 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Aceite ají amarillo',cantidad:'590 g',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Papa Ana',cantidad:'1 u',cat:'otro',nota:'Sobrante',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Queso llanero',cantidad:'1 porción',cat:'otro',nota:'Derretido',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Fainazzeta',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Harina 0000',cantidad:'900 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Sopa de topinambur',cantidad:'1 L',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Arancini',cantidad:'1 porción',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Provolone',cantidad:'200 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Omelette',cantidad:'1 u',cat:'otro',nota:'Mal marchado',resp:'Alejandra'},
+  {fecha:'13/05',insumo:'Fideos con verduras',cantidad:'3 kg',cat:'perso',nota:'Del 12/05, repartido para llevar',resp:'Alejandra'},
+
+  // 14/05 — Shalmi
+  {fecha:'14/05',insumo:'Mizuna',cantidad:'20 g',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
+  {fecha:'14/05',insumo:'Remolacha encurtida',cantidad:'3.115 kg',cat:'mal-estado',nota:'Mal estado',resp:'Shalmi'},
+
+  // 15/05 — Alejandra
+  {fecha:'15/05',insumo:'Queso llanero procesado',cantidad:'300 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Lechuga',cantidad:'122 g',cat:'mal-estado',nota:'Mal estado',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Mango',cantidad:'1 u',cat:'mal-estado',nota:'Podrido',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Aceite',cantidad:'112 g',cat:'quemado',nota:'Quemado',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Pizza 4 quesos',cantidad:'3 u',cat:'roto',nota:'Rotas',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Pizza fugazzeta',cantidad:'3 u',cat:'roto',nota:'Rotas',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Ribs',cantidad:'102 g',cat:'roto',nota:'Rotas',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Pizza margha',cantidad:'2 u',cat:'otro',nota:'Mal marchadas',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Aros de cebolla',cantidad:'24 g',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Jugo de tomate',cantidad:'825 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Pasta de ajo',cantidad:'20 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'15/05',insumo:'Parmesano',cantidad:'100 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+
+  // 15/05 — Vic
+  {fecha:'15/05',insumo:'Melena',cantidad:'2 porciones',cat:'otro',nota:'Mal comandada',resp:'Vic'},
+  {fecha:'15/05',insumo:'Tarta invertida de membrillo',cantidad:'1 porción',cat:'perso',nota:'Perso',resp:'Vic'},
+
+  // 15/05 — Daniela
+  {fecha:'15/05',insumo:'Lechuga capuchina',cantidad:'756 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Tomate',cantidad:'970 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Zanahoria',cantidad:'733 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Lechuga criolla',cantidad:'465 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Lechuga morada',cantidad:'225 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Palta',cantidad:'—',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+  {fecha:'15/05',insumo:'Cebolla morada',cantidad:'300 g',cat:'perso',nota:'Perso',resp:'Daniela Romero'},
+
+  // 16/05 — Alejandra
+  {fecha:'16/05',insumo:'Salsa roja',cantidad:'900 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Vegetales tatemados',cantidad:'872 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Papas tres pasos cocidas',cantidad:'434 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Hongos DM',cantidad:'299 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Cebolla morada pluma',cantidad:'187 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Cebolla costra',cantidad:'58 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Crema ácida',cantidad:'305 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Salsa verde',cantidad:'340 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Apio brunoise',cantidad:'45 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Ají amarillo',cantidad:'106 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Pizza',cantidad:'1 porción',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Jugo de tomate',cantidad:'6.3 kg',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Ajo',cantidad:'150 g',cat:'perso',nota:'Para salsa perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Albahaca',cantidad:'60 g',cat:'perso',nota:'Para salsa perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Cebolla morada',cantidad:'2.27 kg',cat:'perso',nota:'MEP para perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Cebolla blanca',cantidad:'3.8 kg',cat:'perso',nota:'MEP para perso',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Cebolla morada',cantidad:'3 u',cat:'mal-estado',nota:'Podridas',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Queso llanero',cantidad:'1.5 porciones',cat:'otro',nota:'Derretido',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Toston',cantidad:'1 u',cat:'roto',nota:'Doblado',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Bollo de pizza',cantidad:'3 u',cat:'quemado',nota:'Quemados por frío',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Focaccia',cantidad:'5 u',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Pizza marga',cantidad:'2 u',cat:'quemado',nota:'Quemadas',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Pizza 4 quesos',cantidad:'1 u',cat:'roto',nota:'Pinchada',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Pizza marga',cantidad:'1 u',cat:'roto',nota:'Pinchada',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Alcaucil',cantidad:'200 g',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'16/05',insumo:'Focaccia',cantidad:'12 u',cat:'otro',nota:'Para pan rallado',resp:'Alejandra'},
+
+  // 16/05 — Tomas
+  {fecha:'16/05',insumo:'Pizza fugga',cantidad:'1 u',cat:'roto',nota:'Rota',resp:'Tomas'},
+  {fecha:'16/05',insumo:'Focaccia',cantidad:'3 u',cat:'quemado',nota:'Quemadas',resp:'Tomas'},
+
+  // 17/05 — Alejandra
+  {fecha:'17/05',insumo:'Pizza margha',cantidad:'2 u',cat:'otro',nota:'—',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Bollo de pizza',cantidad:'4 u',cat:'roto',nota:'Rotos',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Focaccia',cantidad:'4 porciones',cat:'quemado',nota:'Quemadas',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Focaccia',cantidad:'6 u',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Stracciatella',cantidad:'12 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Provolone',cantidad:'400 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Queso llanero',cantidad:'1.6 kg',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Mayo de hongos',cantidad:'180 g',cat:'fecha',nota:'Fecha',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Azúcar',cantidad:'10 g',cat:'perso',nota:'Perso',resp:'Alejandra'},
+  {fecha:'17/05',insumo:'Butter',cantidad:'1 u',cat:'otro',nota:'Poca cantidad',resp:'Alejandra'},
+
+  // 17/05 — Mel
+  {fecha:'17/05',insumo:'Boniato',cantidad:'270 g',cat:'mal-estado',nota:'Feo',resp:'Mel'},
+  {fecha:'17/05',insumo:'Crema de maní',cantidad:'130 g',cat:'otro',nota:'—',resp:'Mel'},
 ];
 
 const LBL={'mal-estado':'Mal estado','quemado':'Quemado','roto':'Roto','perso':'Perso','fecha':'Vencido','prueba':'Prueba','limpieza':'Limpieza','otro':'Otro'};
@@ -2004,7 +2108,7 @@ function getWeek(fecha){
   }
   if (m === 5) {
     if (d >= 1 && d <= 5) return 4;
-    if (d >= 6 && d <= 13) return 5;
+    if (d >= 6 && d <= 17) return 5;
   }
   return 0;
 }
@@ -2013,7 +2117,7 @@ const WEEK_LABELS = {
   2: { name: 'Semana 2', range: '15 — 21 abril', days: 7 },
   3: { name: 'Semana 3', range: '22 — 28 abril', days: 7 },
   4: { name: 'Semana 4', range: '29 abril — 5 mayo', days: 7 },
-  5: { name: 'Semana 5', range: '6 — 13 mayo', days: 8 }
+  5: { name: 'Semana 5', range: '6 — 17 mayo', days: 12 }
 };
 
 function rSemanaView() {
@@ -2283,6 +2387,5 @@ function parseDate(f){const[d,m]=f.split('/').map(Number);return m*100+d;}
 rKPIs(DATA);rTable([...DATA].reverse());rSidebar();
 document.getElementById('fCount').textContent=DATA.length+' registros totales';
 </script>
-
 </body>
 </html>
