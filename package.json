@@ -1,0 +1,20 @@
+{
+  "name": "mermas-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot para control de mermas – Chuí",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "extract": "node scripts/extract-data.js",
+    "setup": "npm install && npm run extract"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "twilio": "^5.4.5"
+  }
+}

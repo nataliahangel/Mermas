@@ -1,0 +1,20 @@
+{
+  "alertas": {
+    "umbral_diario": 8,
+    "por_categoria": {
+      "quemado": 4,
+      "mal-estado": 6,
+      "roto": 5,
+      "perso": 4,
+      "fecha": 3,
+      "prueba": 3,
+      "limpieza": 3,
+      "otro": 5
+    }
+  },
+  "reportes": {
+    "hora_diario": "23:00",
+    "dia_semanal": "domingo",
+    "hora_semanal": "20:00"
+  }
+}

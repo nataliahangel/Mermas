@@ -1,0 +1,4970 @@
+[
+  {
+    "fecha": "09/04",
+    "insumo": "Zanahoria",
+    "cantidad": "1 porción",
+    "cat": "mal-estado",
+    "nota": "Fuera de la heladera todo el servicio",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Queso llanero",
+    "cantidad": "2 porciones",
+    "cat": "otro",
+    "nota": "Derretidos",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Verdeo",
+    "cantidad": "2.725 kg",
+    "cat": "mal-estado",
+    "nota": "Podrido",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Lechuga capuchina",
+    "cantidad": "300 g",
+    "cat": "mal-estado",
+    "nota": "Babosa",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Remolacha",
+    "cantidad": "250 g",
+    "cat": "mal-estado",
+    "nota": "Hongueada",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Palta",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Aplastada",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Perejil",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Baboso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Huevos",
+    "cantidad": "3 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Personal",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Papa Ana",
+    "cantidad": "3.179 kg",
+    "cat": "otro",
+    "nota": "Merma para llevar",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Vinagreta limones",
+    "cantidad": "425 g",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Butters",
+    "cantidad": "380 g (3 u)",
+    "cat": "otro",
+    "nota": "Entró agua durante la cocción",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "09/04",
+    "insumo": "Tapas alfajor fg",
+    "cantidad": "44 g",
+    "cat": "prueba",
+    "nota": "Prueba",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Pan de pizza",
+    "cantidad": "4 u",
+    "cat": "otro",
+    "nota": "Sobró del servicio",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "No salió en despacho (cortada)",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Masa sablée",
+    "cantidad": "44 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Fainazzeta",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Queso (uni)",
+    "cantidad": "1 u",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Zanahoria",
+    "cantidad": "580 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Polenta",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal porcionada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Butters",
+    "cantidad": "3 u",
+    "cat": "otro",
+    "nota": "Entró agua de cocción",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Merengue",
+    "cantidad": "870 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/04",
+    "insumo": "Aceite freidora",
+    "cantidad": "4 L",
+    "cat": "quemado",
+    "nota": "Quemado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Melena (hongo)",
+    "cantidad": "250 g",
+    "cat": "perso",
+    "nota": "Personal",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Albahaca",
+    "cantidad": "1.2 kg",
+    "cat": "mal-estado",
+    "nota": "Fea/mal estado",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Pizza boniato",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Polenta",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Palta",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Baos",
+    "cantidad": "2 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Frutilla",
+    "cantidad": "160 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Frambuesa",
+    "cantidad": "35 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Pepino",
+    "cantidad": "1.2 kg",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Queso llanero",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Salsa blanca",
+    "cantidad": "1.045 kg",
+    "cat": "fecha",
+    "nota": "Pasada de fecha",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Baos",
+    "cantidad": "15 u",
+    "cat": "fecha",
+    "nota": "Fuera de fecha (2/4) — perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Focaccia",
+    "cantidad": "½ porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Chilaquiles",
+    "cantidad": "1 porción",
+    "cat": "prueba",
+    "nota": "Prueba",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "11/04",
+    "insumo": "Zanahoria",
+    "cantidad": "1 plato",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Gouda",
+    "cantidad": "407 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Zanahoria en almíbar",
+    "cantidad": "306 g",
+    "cat": "fecha",
+    "nota": "Vencida",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "otro",
+    "nota": "No salieron en el servicio (cortadas)",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Empanadas",
+    "cantidad": "8 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Cremoso palta",
+    "cantidad": "100 g",
+    "cat": "mal-estado",
+    "nota": "Oxidado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Polenta",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Papa",
+    "cantidad": "1.2 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Cremoso chocolate",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Derretidos",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Vinagreta limones",
+    "cantidad": "800 g",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Boniato",
+    "cantidad": "1.8 kg",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Tomate redondo",
+    "cantidad": "490 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Ciboulettes",
+    "cantidad": "5 u",
+    "cat": "mal-estado",
+    "nota": "Podridos",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Eneldo",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Podrido",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Pepino",
+    "cantidad": "685 g",
+    "cat": "mal-estado",
+    "nota": "Podridos",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Lechuga",
+    "cantidad": "1.9 kg",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Kale rizado",
+    "cantidad": "1.1 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Espinaca",
+    "cantidad": "1.7 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Brócoli",
+    "cantidad": "2.9 kg",
+    "cat": "perso",
+    "nota": "Amarillo — destinado a perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Pepino",
+    "cantidad": "2 u",
+    "cat": "limpieza",
+    "nota": "Limpieza de cámara",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Tomate perita",
+    "cantidad": "1 u",
+    "cat": "limpieza",
+    "nota": "Limpieza de cámara",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Remolacha",
+    "cantidad": "2 u",
+    "cat": "limpieza",
+    "nota": "Limpieza de cámara",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Ají amarillo",
+    "cantidad": "2 u",
+    "cat": "limpieza",
+    "nota": "Limpieza de cámara",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Tomate de árbol",
+    "cantidad": "1 u",
+    "cat": "limpieza",
+    "nota": "Limpieza de cámara",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "12/04",
+    "insumo": "Chimi achicoria 9/4",
+    "cantidad": "1 frasco",
+    "cat": "roto",
+    "nota": "Frasco partido",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/04",
+    "insumo": "Tomate",
+    "cantidad": "660 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "13/04",
+    "insumo": "Frutillas",
+    "cantidad": "835 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "13/04",
+    "insumo": "Masa canelón",
+    "cantidad": "1.5 kg",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "13/04",
+    "insumo": "Salsa verde",
+    "cantidad": "100 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "13/04",
+    "insumo": "Lasaña",
+    "cantidad": "6 porciones",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Orégano",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Frambuesa",
+    "cantidad": "½ cubeta",
+    "cat": "fecha",
+    "nota": "Hongueada, fecha 6/04",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Menta",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Lechuga morada",
+    "cantidad": "848 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Girgolas taco cocida",
+    "cantidad": "120 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Bollo de pizza",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Ciabatta",
+    "cantidad": "9 u",
+    "cat": "perso",
+    "nota": "Fuera de carta — perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Coco en escamas",
+    "cantidad": "105 g",
+    "cat": "mal-estado",
+    "nota": "Mal olor",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Lechuga capuchina",
+    "cantidad": "550 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Papa Ana",
+    "cantidad": "6 u",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Bollo de masa",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Butter",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal hecho",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Mousse",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal hecho",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Huevada berenjena",
+    "cantidad": "2 L",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "14/04",
+    "insumo": "Puerro cocido",
+    "cantidad": "1 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Frambuesa",
+    "cantidad": "4 cubetas",
+    "cat": "fecha",
+    "nota": "Del 10/04 — mal estado",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Verdeo (parte verde)",
+    "cantidad": "800 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Recortes milanesas",
+    "cantidad": "250 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Hojas de puerro",
+    "cantidad": "1 kg",
+    "cat": "mal-estado",
+    "nota": "Podridas",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Pencas de acelga",
+    "cantidad": "750 g",
+    "cat": "mal-estado",
+    "nota": "Podridas",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Garbanzo",
+    "cantidad": "400 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Polenta",
+    "cantidad": "1.157 kg",
+    "cat": "perso",
+    "nota": "Perso del 14/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Hummus",
+    "cantidad": "767 g",
+    "cat": "mal-estado",
+    "nota": "Perso, mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "16/04",
+    "insumo": "Pesto de polenta",
+    "cantidad": "800 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Lechuga capuchina",
+    "cantidad": "550 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Butter",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal hecho",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Mousse",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal hecho",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "15/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Pizza XO",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "MEP sriracha",
+    "cantidad": "⅓ balde",
+    "cat": "mal-estado",
+    "nota": "Hongo",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Huevada de berenjena",
+    "cantidad": "560 g",
+    "cat": "fecha",
+    "nota": "Cambio de carta + fecha vieja (13/04)",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Alioli berenjena",
+    "cantidad": "—",
+    "cat": "otro",
+    "nota": "Cambio de carta (14/04)",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Provolone",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "2 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Caldo claro",
+    "cantidad": "1 L",
+    "cat": "otro",
+    "nota": "Error de MEP",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Verdeo",
+    "cantidad": "235 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Garbanzo cocido",
+    "cantidad": "165 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Chips boniato",
+    "cantidad": "220 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Queso llanero",
+    "cantidad": "3 pax",
+    "cat": "otro",
+    "nota": "Derretido",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Tapas de empanada",
+    "cantidad": "50 g (3 u)",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Tomillo",
+    "cantidad": "50 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Huacatay",
+    "cantidad": "90 g (1 atado)",
+    "cat": "mal-estado",
+    "nota": "Chamuscado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Eneldo",
+    "cantidad": "½ atado",
+    "cat": "mal-estado",
+    "nota": "Amarillo",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Naranja",
+    "cantidad": "1 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Eneldo",
+    "cantidad": "159 g",
+    "cat": "mal-estado",
+    "nota": "Amarillo",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Romesco",
+    "cantidad": "1.2 kg",
+    "cat": "fecha",
+    "nota": "Fecha vieja",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Tortilla",
+    "cantidad": "1.8 kg",
+    "cat": "perso",
+    "nota": "Perso, fecha vieja",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Papa purée",
+    "cantidad": "3 kg",
+    "cat": "fecha",
+    "nota": "Fecha vieja",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Arroz",
+    "cantidad": "2 kg",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Papa",
+    "cantidad": "4 kg",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Brócoli",
+    "cantidad": "3 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "17/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Caldo oscuro",
+    "cantidad": "15 L",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Pizza marga chica",
+    "cantidad": "6 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Vinagreta limones",
+    "cantidad": "400 g",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Eneldo",
+    "cantidad": "150 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Romesco",
+    "cantidad": "1.2 kg",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Tortilla",
+    "cantidad": "1.8 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Salsa verde",
+    "cantidad": "80 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Yasgua",
+    "cantidad": "765 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Caldo de pallares",
+    "cantidad": "5 L",
+    "cat": "otro",
+    "nota": "Extras",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Crema ácida",
+    "cantidad": "250 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "18/04",
+    "insumo": "Frambuesa",
+    "cantidad": "15 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Acelga",
+    "cantidad": "5 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Relleno DM",
+    "cantidad": "450 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Empanadas",
+    "cantidad": "16 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Focaccia",
+    "cantidad": "20 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Masa lasaña",
+    "cantidad": "1.555 kg",
+    "cat": "perso",
+    "nota": "Perso, fecha",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Sin motivo",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Sin motivo",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Arroz",
+    "cantidad": "500 g",
+    "cat": "otro",
+    "nota": "Sin motivo",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/04",
+    "insumo": "Queso",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemado/derretido",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Sandía",
+    "cantidad": "—",
+    "cat": "mal-estado",
+    "nota": "Del 13/04 — babosa, olvido de tirar",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Milanesas de girgolas",
+    "cantidad": "900 g",
+    "cat": "fecha",
+    "nota": "Del 13/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Masa de faina",
+    "cantidad": "7.735 kg",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Omelette",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Salsa ocopa",
+    "cantidad": "754 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "20/04",
+    "insumo": "Vinagreta limones",
+    "cantidad": "150 g",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pizza margha",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Criolla",
+    "cantidad": "350 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pizza kale",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pizza marga",
+    "cantidad": "4 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Fainazzeta",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Vinagreta limones",
+    "cantidad": "1.4 kg",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Nabo",
+    "cantidad": "300 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pepino",
+    "cantidad": "100 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Pallares listo",
+    "cantidad": "1.450 kg",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso (fetas)",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "21/04",
+    "insumo": "Focaccia",
+    "cantidad": "6 porciones",
+    "cat": "otro",
+    "nota": "Sobra de stock",
+    "resp": "Vic"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Albahaca",
+    "cantidad": "6 atados",
+    "cat": "mal-estado",
+    "nota": "Para pesto",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Huacatay",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Raro",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Cilantro",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Eneldo",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Cúrcuma",
+    "cantidad": "480 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Orégano",
+    "cantidad": "2 atados",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Mousse chocolate",
+    "cantidad": "55 g",
+    "cat": "mal-estado",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Hoja higuera",
+    "cantidad": "41 g",
+    "cat": "mal-estado",
+    "nota": "Recortes en mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Arroz",
+    "cantidad": "2 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Ajo",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Jengibre",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Masa de lasaña",
+    "cantidad": "3.075 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "23/04",
+    "insumo": "Tomate",
+    "cantidad": "565 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "23/04",
+    "insumo": "Cilantro",
+    "cantidad": "1 atado",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "23/04",
+    "insumo": "Garbanzos fritos",
+    "cantidad": "150 g",
+    "cat": "otro",
+    "nota": "Duros",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Arancini",
+    "cantidad": "10 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Queso llanero",
+    "cantidad": "90 g",
+    "cat": "quemado",
+    "nota": "Quemado",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Focaccia",
+    "cantidad": "10 porciones",
+    "cat": "otro",
+    "nota": "Sobró del servicio",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Pan de pizza",
+    "cantidad": "5 u",
+    "cat": "otro",
+    "nota": "Sobró del servicio",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Pizza margha",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Focaccia",
+    "cantidad": "5 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Queso llanero",
+    "cantidad": "4 porciones",
+    "cat": "otro",
+    "nota": "Derretidas",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "22/04",
+    "insumo": "Garbanzo cocido",
+    "cantidad": "800 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Ale"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Polenta",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Pallares",
+    "cantidad": "3.457 kg",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Nabo",
+    "cantidad": "1.115 kg",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Garbanzo cocido",
+    "cantidad": "708 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Merengue aquafaba",
+    "cantidad": "750 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Menta",
+    "cantidad": "20 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Mango",
+    "cantidad": "260 g",
+    "cat": "mal-estado",
+    "nota": "Pasado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Aquafaba",
+    "cantidad": "150 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Cilantro",
+    "cantidad": "2 atados",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Apio",
+    "cantidad": "315 g",
+    "cat": "mal-estado",
+    "nota": "Oxidado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "24/04",
+    "insumo": "Ciboulette picado seco",
+    "cantidad": "22 g",
+    "cat": "mal-estado",
+    "nota": "Amarillo",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Tapas de empanada",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Faina",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Salsa roja",
+    "cantidad": "1 L",
+    "cat": "mal-estado",
+    "nota": "Fermentada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Lechuga",
+    "cantidad": "715 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "25/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 u entera",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "26/04",
+    "insumo": "Focaccia",
+    "cantidad": "1 u entera",
+    "cat": "perso",
+    "nota": "Perso (entera)",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Panacota",
+    "cantidad": "1 u",
+    "cat": "mal-estado",
+    "nota": "Contaminada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Hummus",
+    "cantidad": "876 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Puré de papa",
+    "cantidad": "1.3 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Fainazzeta",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Claras",
+    "cantidad": "100 g",
+    "cat": "fecha",
+    "nota": "Del 19/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Salsa verde",
+    "cantidad": "500 g",
+    "cat": "mal-estado",
+    "nota": "Oxidada, fecha 22/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Shug",
+    "cantidad": "—",
+    "cat": "mal-estado",
+    "nota": "22/04 — sabor oxidado y color",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Vegetales tatemados",
+    "cantidad": "800 g",
+    "cat": "otro",
+    "nota": "Receta salió mal, color y sabor",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "27/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Tomate cherry",
+    "cantidad": "850 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Tomate redondo",
+    "cantidad": "9 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Tomate perita",
+    "cantidad": "2 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Palta",
+    "cantidad": "½ u",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Palta",
+    "cantidad": "½ u",
+    "cat": "otro",
+    "nota": "Cayó al piso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Pan trenza",
+    "cantidad": "1 u",
+    "cat": "quemado",
+    "nota": "Quemado",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Tarta invertida",
+    "cantidad": "1 porción",
+    "cat": "prueba",
+    "nota": "Prueba",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Tapas alfajor",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Se partieron",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "28/04",
+    "insumo": "Manzana verde",
+    "cantidad": "45 g",
+    "cat": "otro",
+    "nota": "Recortes de los chips",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Empanadas",
+    "cantidad": "7 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Arancini",
+    "cantidad": "10 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Rolo",
+    "cantidad": "2 u",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "29/04",
+    "insumo": "Focaccia",
+    "cantidad": "½ u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Salsa blanca",
+    "cantidad": "650 g",
+    "cat": "fecha",
+    "nota": "Perso, mal sabor y fecha vieja",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Nabo",
+    "cantidad": "—",
+    "cat": "mal-estado",
+    "nota": "Del 27/04 — mal sabor y sin textura",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Jalapeño DM",
+    "cantidad": "8 g",
+    "cat": "mal-estado",
+    "nota": "Babosos",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Remolacha",
+    "cantidad": "130 g",
+    "cat": "mal-estado",
+    "nota": "Babosa, fecha 20/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Salsa lasaña",
+    "cantidad": "90 g",
+    "cat": "fecha",
+    "nota": "Fecha 24/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Cebolla XO",
+    "cantidad": "135 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Diplomata cítrica",
+    "cantidad": "210 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Merengue alfajor",
+    "cantidad": "130 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Romesco",
+    "cantidad": "400 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "30/04",
+    "insumo": "Salsa tahini",
+    "cantidad": "874 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Tomate de árbol",
+    "cantidad": "3 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Tomate redondo",
+    "cantidad": "1 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Salsa yasgua",
+    "cantidad": "—",
+    "cat": "fecha",
+    "nota": "Del 20/04, por fecha",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Focaccia",
+    "cantidad": "4 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Manzana verde",
+    "cantidad": "90 g",
+    "cat": "otro",
+    "nota": "Recortes de chips",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Escamas de coco",
+    "cantidad": "300 g",
+    "cat": "otro",
+    "nota": "Reutilizada 2da vez para infusión",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Butter",
+    "cantidad": "90 g",
+    "cat": "otro",
+    "nota": "Quedó muy chico para servir, tanda 27/04",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "01/05",
+    "insumo": "Naranja",
+    "cantidad": "½ u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Clara",
+    "cantidad": "2 L",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Queso llanero",
+    "cantidad": "2 porciones",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Fainazzeta",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Crudas",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza margarita",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Focaccia",
+    "cantidad": "6 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Ribs",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Guiso de lentejas",
+    "cantidad": "1 porción",
+    "cat": "prueba",
+    "nota": "Briefing",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Tapas de empanada",
+    "cantidad": "520 g",
+    "cat": "roto",
+    "nota": "Frágiles, manipulación",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza fugga",
+    "cantidad": "2 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "DDL vegano",
+    "cantidad": "3 L",
+    "cat": "quemado",
+    "nota": "Se quemó",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Manzana",
+    "cantidad": "45 g",
+    "cat": "otro",
+    "nota": "Recortes",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Mango",
+    "cantidad": "90 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza marga",
+    "cantidad": "5 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Bollos",
+    "cantidad": "12 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Pizza kale",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Queso llanero",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "Derretido",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "02/05",
+    "insumo": "Papa Ana",
+    "cantidad": "2 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "03/05",
+    "insumo": "Pepino",
+    "cantidad": "2 u",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "03/05",
+    "insumo": "Tomate cherry",
+    "cantidad": "180 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "03/05",
+    "insumo": "Vegetales tatemados",
+    "cantidad": "525 g",
+    "cat": "fecha",
+    "nota": "Fecha 27/04",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "03/05",
+    "insumo": "Alioli huacatay",
+    "cantidad": "350 g",
+    "cat": "fecha",
+    "nota": "Fecha 27/04",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "03/05",
+    "insumo": "Salsa ocopa",
+    "cantidad": "680 g",
+    "cat": "fecha",
+    "nota": "Fecha 28/04",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "05/05",
+    "insumo": "Toston",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Error de comanda",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "05/05",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Ribs",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "Error de comanda",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Pepino",
+    "cantidad": "200 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Chips boniato",
+    "cantidad": "200 g",
+    "cat": "mal-estado",
+    "nota": "Feo sabor",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Pizza margha",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Pizza fugazzeta",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Error de comanda",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Romero",
+    "cantidad": "185 g",
+    "cat": "quemado",
+    "nota": "Quemado por frío de cámara",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Pera",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Ezequiel"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Pencas cocidas",
+    "cantidad": "1.6 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Masa lasaña",
+    "cantidad": "1.8 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Salsa de tomate",
+    "cantidad": "1 L",
+    "cat": "perso",
+    "nota": "Perso, para salsa blanca",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Queso llanero procesado",
+    "cantidad": "1 kg",
+    "cat": "perso",
+    "nota": "Perso, para salsa blanca",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Manteca",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso, para salsa blanca",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Harina",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso, para salsa blanca",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Leche",
+    "cantidad": "2 L",
+    "cat": "perso",
+    "nota": "Perso, para salsa blanca",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "06/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Salsa tahini",
+    "cantidad": "450 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Fideos cocidos",
+    "cantidad": "800 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Pesto gnoqui",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso final turno",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Pan de pizza",
+    "cantidad": "2 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Pizza margha",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Lasaña",
+    "cantidad": "4 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Focaccia",
+    "cantidad": "½ u cortada",
+    "cat": "otro",
+    "nota": "Sobrante de servicio",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Palta",
+    "cantidad": "½ u",
+    "cat": "otro",
+    "nota": "Cayó al piso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Semifredo",
+    "cantidad": "1 u",
+    "cat": "prueba",
+    "nota": "Degustación salón",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Fainazzeta",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Comida perso sin TACC",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Cebolla caramelizada",
+    "cantidad": "400 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Apio brunoise",
+    "cantidad": "49 g",
+    "cat": "mal-estado",
+    "nota": "Oxidado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Semifredo",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Pallares",
+    "cantidad": "3.315 kg",
+    "cat": "perso",
+    "nota": "Del 28/04, perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Pallares",
+    "cantidad": "5.580 kg",
+    "cat": "perso",
+    "nota": "Del 1/05, perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Cebolla blanca",
+    "cantidad": "900 g",
+    "cat": "perso",
+    "nota": "Sofrito perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Zanahoria",
+    "cantidad": "235 g",
+    "cat": "perso",
+    "nota": "Sofrito perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Sofrito cocido",
+    "cantidad": "500 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Jugo de lima",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Curry",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Leche de coco en polvo",
+    "cantidad": "160 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Arroz largo fino",
+    "cantidad": "1 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Caldo",
+    "cantidad": "1 L",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Tapas alfajor",
+    "cantidad": "77 g",
+    "cat": "prueba",
+    "nota": "Prueba cocción, se expandieron",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Alfagorditos",
+    "cantidad": "825 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Tarta invertida",
+    "cantidad": "1 porción",
+    "cat": "prueba",
+    "nota": "Membrillos y mascarpone, prueba salón",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "07/05",
+    "insumo": "Kale",
+    "cantidad": "200 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Polenta",
+    "cantidad": "½ u",
+    "cat": "otro",
+    "nota": "Comanda mini polenta",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Papa Ana",
+    "cantidad": "3 u",
+    "cat": "otro",
+    "nota": "Sobrante servicio",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Pasta tortilla",
+    "cantidad": "35 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Ají amarillo encurtido",
+    "cantidad": "140 g",
+    "cat": "mal-estado",
+    "nota": "Fermentado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Toston",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Error de comanda",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Pallares",
+    "cantidad": "1.9 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Limón",
+    "cantidad": "200 g",
+    "cat": "mal-estado",
+    "nota": "Fermentado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Tomate cherry confitado",
+    "cantidad": "50 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Orégano seco",
+    "cantidad": "5 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Mix de quesos",
+    "cantidad": "50 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Chuicheese",
+    "cantidad": "396 g",
+    "cat": "mal-estado",
+    "nota": "Hongos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Puré",
+    "cantidad": "2.5 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Nachos",
+    "cantidad": "88 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Chips boniato",
+    "cantidad": "74 g",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Huevo duro",
+    "cantidad": "97 g",
+    "cat": "fecha",
+    "nota": "Pasado de fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Focaccia",
+    "cantidad": "5 porciones",
+    "cat": "otro",
+    "nota": "Piso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Focaccia",
+    "cantidad": "5 porciones",
+    "cat": "otro",
+    "nota": "Recortes",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Puré",
+    "cantidad": "4 kg",
+    "cat": "perso",
+    "nota": "Pastel de papa, fechas 5/05 y 7/05",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Recortes papa",
+    "cantidad": "5 kg",
+    "cat": "perso",
+    "nota": "Pastel de papa",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Hongos porto",
+    "cantidad": "4 kg",
+    "cat": "perso",
+    "nota": "Cortados, pastel de papa",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Polvo girgola",
+    "cantidad": "15 g",
+    "cat": "perso",
+    "nota": "Pastel de papa",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Polvo hongos de pino",
+    "cantidad": "13 g",
+    "cat": "perso",
+    "nota": "Pastel de papa",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Vino tinto",
+    "cantidad": "300 ml",
+    "cat": "perso",
+    "nota": "Pastel de papa, perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Jalapeños quemados",
+    "cantidad": "30 g",
+    "cat": "quemado",
+    "nota": "Del 4/05",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Huevada",
+    "cantidad": "2.3 L",
+    "cat": "fecha",
+    "nota": "Fecha 5/05",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Llanero procesado",
+    "cantidad": "1.5 kg",
+    "cat": "perso",
+    "nota": "Pastel de papa",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Lechuga",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Ensalada perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Remolacha cocida",
+    "cantidad": "500 g",
+    "cat": "perso",
+    "nota": "Del 4/05, ensalada perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Zanahoria",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Ensalada perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Ensalada perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Apio",
+    "cantidad": "20 g",
+    "cat": "perso",
+    "nota": "Ensalada perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Remolacha cocida",
+    "cantidad": "450 g",
+    "cat": "mal-estado",
+    "nota": "Descarte, del 28/04",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Milanesas de girgolas",
+    "cantidad": "880 g",
+    "cat": "perso",
+    "nota": "Del 4/05, para perso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Pavlovas",
+    "cantidad": "60 g",
+    "cat": "roto",
+    "nota": "Rotas, del 6/05",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Jalea de mango",
+    "cantidad": "650 g",
+    "cat": "mal-estado",
+    "nota": "Se puso fea",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Naranja",
+    "cantidad": "80 g",
+    "cat": "quemado",
+    "nota": "Quemada, del 7/05",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "08/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Baos",
+    "cantidad": "5 u",
+    "cat": "mal-estado",
+    "nota": "Hongos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pulpa de mango",
+    "cantidad": "97 g",
+    "cat": "mal-estado",
+    "nota": "Oxidada",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Costra de queso",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Zanahoria",
+    "cantidad": "417 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Lechuga",
+    "cantidad": "315 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Huevos",
+    "cantidad": "4 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Queso",
+    "cantidad": "280 g",
+    "cat": "perso",
+    "nota": "Perso SW",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Fainazzeta cebolla + queso",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Se cayó",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Puré",
+    "cantidad": "1.35 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Yasgua",
+    "cantidad": "329 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Romesco",
+    "cantidad": "238 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "4 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "7 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Focaccia",
+    "cantidad": "13 porciones",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Manzana",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pan DM",
+    "cantidad": "5 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Huevos",
+    "cantidad": "10 u",
+    "cat": "perso",
+    "nota": "Perso SW",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Tomate cherry",
+    "cantidad": "780 g",
+    "cat": "perso",
+    "nota": "Perso SW",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Romesco",
+    "cantidad": "680 g",
+    "cat": "perso",
+    "nota": "Perso SW",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Lechuga",
+    "cantidad": "380 g",
+    "cat": "perso",
+    "nota": "Perso SW",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pallares",
+    "cantidad": "1 porción",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Arancini",
+    "cantidad": "3 porciones",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Empanadas",
+    "cantidad": "4 porciones",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pizza marga",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Sal",
+    "cantidad": "230 g",
+    "cat": "otro",
+    "nota": "Cayó al piso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Azúcar",
+    "cantidad": "20 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Bollo",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Sriracha",
+    "cantidad": "25 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Provolone",
+    "cantidad": "30 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Pizza marga",
+    "cantidad": "50 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Orégano",
+    "cantidad": "1 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Albahaca",
+    "cantidad": "1 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Aquafaba",
+    "cantidad": "176 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Azúcar blanca",
+    "cantidad": "600 g",
+    "cat": "perso",
+    "nota": "Perso (aclaración Mica)",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Bicarbonato",
+    "cantidad": "16 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Cacao",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Harina",
+    "cantidad": "500 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Aceite girasol",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Sal",
+    "cantidad": "10 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Polvo de hornear",
+    "cantidad": "20 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "09/05",
+    "insumo": "Alfagorditos",
+    "cantidad": "4 u",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Panchitos",
+    "cantidad": "28 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Relleno doble magic",
+    "cantidad": "3.4 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Papa a la sal",
+    "cantidad": "860 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Huevos",
+    "cantidad": "25 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Cremoso chocolate",
+    "cantidad": "1 kg",
+    "cat": "mal-estado",
+    "nota": "Con hongos",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "quemado",
+    "nota": "Quemazón",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Focaccia",
+    "cantidad": "4 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "10/05",
+    "insumo": "Baos",
+    "cantidad": "20 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Gabriel Rolando"
+  },
+  {
+    "fecha": "11/05",
+    "insumo": "Zanahoria",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "11/05",
+    "insumo": "Queso costra",
+    "cantidad": "400 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "11/05",
+    "insumo": "Crema",
+    "cantidad": "110 g",
+    "cat": "mal-estado",
+    "nota": "No rotulada en heladera de paste",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "11/05",
+    "insumo": "Manzana",
+    "cantidad": "90 g",
+    "cat": "otro",
+    "nota": "Recortes",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "11/05",
+    "insumo": "Merengue pavlova",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Cracker queso",
+    "cantidad": "140 g",
+    "cat": "mal-estado",
+    "nota": "Del 1/05, mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Girgolas",
+    "cantidad": "1.3 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Melena (bao)",
+    "cantidad": "250 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Hongos DM",
+    "cantidad": "1 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Pan hamburguesa",
+    "cantidad": "11 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Tomate cherry",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Zanahoria",
+    "cantidad": "600 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Lechuga",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Cajú",
+    "cantidad": "30 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Queso gouda",
+    "cantidad": "10 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Salsa marga",
+    "cantidad": "669 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Ajilli",
+    "cantidad": "2.706 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Salsa tahini",
+    "cantidad": "230 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Pizza marga",
+    "cantidad": "3 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Toston",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Fainazzeta",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Papa Ana",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Merma del servicio",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Focaccia",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Piso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "100 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Tarta invertida",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Cumple",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "12/05",
+    "insumo": "Focaccia",
+    "cantidad": "10 porciones",
+    "cat": "perso",
+    "nota": "Perso, final de turno",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Fideos largos",
+    "cantidad": "4 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Salsa de soja",
+    "cantidad": "400 ml",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Huevos",
+    "cantidad": "25 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Ajo",
+    "cantidad": "35 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Zanahoria",
+    "cantidad": "1.5 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Cebolla",
+    "cantidad": "1 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Leche",
+    "cantidad": "2 L",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pasta de ajo",
+    "cantidad": "70 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "—",
+    "cantidad": "1.6 kg",
+    "cat": "perso",
+    "nota": "Perso (sin especificar)",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pizza kale",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Pinchados",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Focaccia",
+    "cantidad": "4 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Caco"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Leche",
+    "cantidad": "2 L",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Huevos",
+    "cantidad": "10 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Azúcar",
+    "cantidad": "500 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Panchitos",
+    "cantidad": "30 u",
+    "cat": "perso",
+    "nota": "Sobraron del evento",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pastelera de mango",
+    "cantidad": "750 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Jalea de mango",
+    "cantidad": "180 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Láminas de mango",
+    "cantidad": "110 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Queso llanero recortes",
+    "cantidad": "600 g",
+    "cat": "mal-estado",
+    "nota": "Baboso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Ajo pelado",
+    "cantidad": "565 g",
+    "cat": "otro",
+    "nota": "Se cayó al piso",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Mayo de hongos",
+    "cantidad": "400 g",
+    "cat": "fecha",
+    "nota": "Del evento, fecha 8/05",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Salsa verde",
+    "cantidad": "714 g",
+    "cat": "fecha",
+    "nota": "Del 8/05, mal color y sabor",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pesto pallares",
+    "cantidad": "157 g",
+    "cat": "fecha",
+    "nota": "Del 5/05",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pallares",
+    "cantidad": "1 plato",
+    "cat": "prueba",
+    "nota": "Foto",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Choclo quemado",
+    "cantidad": "1 plato",
+    "cat": "prueba",
+    "nota": "Foto",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Panacota",
+    "cantidad": "1 u",
+    "cat": "prueba",
+    "nota": "Foto",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Semifredo",
+    "cantidad": "1 u",
+    "cat": "prueba",
+    "nota": "Foto",
+    "resp": "Celeste Falcon"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Queso llanero",
+    "cantidad": "480 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Verdeo",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Chips boniato",
+    "cantidad": "30 g",
+    "cat": "quemado",
+    "nota": "Quemado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "3 u",
+    "cat": "quemado",
+    "nota": "Quemado por frío",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Pizza margha",
+    "cantidad": "230 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Parmesano",
+    "cantidad": "10 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Aceite ají amarillo",
+    "cantidad": "590 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Papa Ana",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Sobrante",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Queso llanero",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "Derretido",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Fainazzeta",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Harina 0000",
+    "cantidad": "900 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Sopa de topinambur",
+    "cantidad": "1 L",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Arancini",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Provolone",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Omelette",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "13/05",
+    "insumo": "Fideos con verduras",
+    "cantidad": "3 kg",
+    "cat": "perso",
+    "nota": "Del 12/05, repartido para llevar",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "14/05",
+    "insumo": "Mizuna",
+    "cantidad": "20 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "14/05",
+    "insumo": "Remolacha encurtida",
+    "cantidad": "3.115 kg",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Queso llanero procesado",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Lechuga",
+    "cantidad": "122 g",
+    "cat": "mal-estado",
+    "nota": "Mal estado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Mango",
+    "cantidad": "1 u",
+    "cat": "mal-estado",
+    "nota": "Podrido",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Aceite",
+    "cantidad": "112 g",
+    "cat": "quemado",
+    "nota": "Quemado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "3 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Pizza fugazzeta",
+    "cantidad": "3 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Ribs",
+    "cantidad": "102 g",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Pizza margha",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Mal marchadas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Aros de cebolla",
+    "cantidad": "24 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Jugo de tomate",
+    "cantidad": "825 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Pasta de ajo",
+    "cantidad": "20 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Parmesano",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Melena",
+    "cantidad": "2 porciones",
+    "cat": "otro",
+    "nota": "Mal comandada",
+    "resp": "Vic"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Tarta invertida de membrillo",
+    "cantidad": "1 porción",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Vic"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Lechuga capuchina",
+    "cantidad": "756 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Tomate",
+    "cantidad": "970 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Zanahoria",
+    "cantidad": "733 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Lechuga criolla",
+    "cantidad": "465 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Lechuga morada",
+    "cantidad": "225 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Palta",
+    "cantidad": "—",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "15/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Salsa roja",
+    "cantidad": "900 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Vegetales tatemados",
+    "cantidad": "872 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Papas tres pasos cocidas",
+    "cantidad": "434 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Hongos DM",
+    "cantidad": "299 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Cebolla morada pluma",
+    "cantidad": "187 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Cebolla costra",
+    "cantidad": "58 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Crema ácida",
+    "cantidad": "305 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Salsa verde",
+    "cantidad": "340 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Apio brunoise",
+    "cantidad": "45 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Ají amarillo",
+    "cantidad": "106 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Pizza",
+    "cantidad": "1 porción",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Jugo de tomate",
+    "cantidad": "6.3 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Ajo",
+    "cantidad": "150 g",
+    "cat": "perso",
+    "nota": "Para salsa perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Albahaca",
+    "cantidad": "60 g",
+    "cat": "perso",
+    "nota": "Para salsa perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "2.27 kg",
+    "cat": "perso",
+    "nota": "MEP para perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Cebolla blanca",
+    "cantidad": "3.8 kg",
+    "cat": "perso",
+    "nota": "MEP para perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Cebolla morada",
+    "cantidad": "3 u",
+    "cat": "mal-estado",
+    "nota": "Podridas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Queso llanero",
+    "cantidad": "1.5 porciones",
+    "cat": "otro",
+    "nota": "Derretido",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Toston",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Doblado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "3 u",
+    "cat": "quemado",
+    "nota": "Quemados por frío",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Focaccia",
+    "cantidad": "5 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Pizza marga",
+    "cantidad": "2 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Pizza 4 quesos",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Pizza marga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Pinchada",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Alcaucil",
+    "cantidad": "200 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Focaccia",
+    "cantidad": "12 u",
+    "cat": "otro",
+    "nota": "Para pan rallado",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Pizza fugga",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "16/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 u",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Tomas"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Pizza margha",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "4 u",
+    "cat": "roto",
+    "nota": "Rotos",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Focaccia",
+    "cantidad": "4 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Focaccia",
+    "cantidad": "6 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Stracciatella",
+    "cantidad": "12 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Provolone",
+    "cantidad": "400 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Queso llanero",
+    "cantidad": "1.6 kg",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Mayo de hongos",
+    "cantidad": "180 g",
+    "cat": "fecha",
+    "nota": "Fecha",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Azúcar",
+    "cantidad": "10 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Butter",
+    "cantidad": "1 u",
+    "cat": "otro",
+    "nota": "Poca cantidad",
+    "resp": "Alejandra"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Boniato",
+    "cantidad": "270 g",
+    "cat": "mal-estado",
+    "nota": "Feo",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "17/05",
+    "insumo": "Crema de maní",
+    "cantidad": "130 g",
+    "cat": "otro",
+    "nota": "—",
+    "resp": "Mel"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Yasgua",
+    "cantidad": "—",
+    "cat": "fecha",
+    "nota": "Del 9/05, fecha",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Panacota",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Rota",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Mezcla de buñuelos",
+    "cantidad": "460 g",
+    "cat": "mal-estado",
+    "nota": "Perso, mal estado",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Papa Ana",
+    "cantidad": "2 u",
+    "cat": "otro",
+    "nota": "Sobrante servicio",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Pizza marga",
+    "cantidad": "2 u",
+    "cat": "roto",
+    "nota": "Rotas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Focaccia",
+    "cantidad": "2 porciones",
+    "cat": "quemado",
+    "nota": "Quemadas",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "1 u",
+    "cat": "roto",
+    "nota": "Roto",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "18/05",
+    "insumo": "Recortes melena",
+    "cantidad": "250 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Shalmi"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Lechuga",
+    "cantidad": "350 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Tomate",
+    "cantidad": "780 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Zanahoria",
+    "cantidad": "668 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Palta",
+    "cantidad": "4 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Daniela Romero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Focaccia",
+    "cantidad": "3 porciones",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Gouda",
+    "cantidad": "350 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Nicolas Panadero"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Costra",
+    "cantidad": "—",
+    "cat": "otro",
+    "nota": "Mal marchado",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Cebolla fugazzeta",
+    "cantidad": "250 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Girgolas",
+    "cantidad": "780 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Perejil",
+    "cantidad": "50 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Jugo de tomate",
+    "cantidad": "3.5 L",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Manzana",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Vino blanco",
+    "cantidad": "500 ml",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Aceitunas",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Pan rallado",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Pasta de ajo",
+    "cantidad": "50 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Fideos",
+    "cantidad": "5 paquetes",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Provolone",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Pan de pizza",
+    "cantidad": "1 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Bollo de pizza",
+    "cantidad": "6 u",
+    "cat": "quemado",
+    "nota": "Quemados por frío",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Focaccia",
+    "cantidad": "1 porción",
+    "cat": "quemado",
+    "nota": "Quemada",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "19/05",
+    "insumo": "Polenta",
+    "cantidad": "½ u",
+    "cat": "otro",
+    "nota": "Sobrante",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Leche",
+    "cantidad": "400 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Gouda",
+    "cantidad": "300 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Provolone",
+    "cantidad": "150 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Palta",
+    "cantidad": "150 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Ajo",
+    "cantidad": "100 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Queso llanero",
+    "cantidad": "200 g",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  },
+  {
+    "fecha": "20/05",
+    "insumo": "Huevos",
+    "cantidad": "15 u",
+    "cat": "perso",
+    "nota": "Perso",
+    "resp": "Mica"
+  }
+]
